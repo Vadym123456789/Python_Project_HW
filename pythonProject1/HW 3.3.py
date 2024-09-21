@@ -1,11 +1,3 @@
-def split_list(lst):
-    if not lst:
-        return [[], []]
-
-    mid = (len(lst) + 1) // 2
-    return [lst[:mid], lst[mid:]]
-
-
 # Тестові випадки
 test_cases = [
     [1, 2, 3, 4, 5, 6],
@@ -14,6 +6,18 @@ test_cases = [
     [1],
     []
 ]
+
+# Обробка кожного тестового випадку
+for lst in test_cases:
+    if not lst:
+        result = [[], []]
+    else:
+        mid = len(lst) // 2
+        if len(lst) % 2 != 0:
+            mid += 1
+        result = [lst[:mid], lst[mid:]]
+
+    print(f"{lst} => {result}")
 
 # Перевірка кожного тестового випадку
 for case in test_cases:
