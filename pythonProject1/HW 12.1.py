@@ -10,4 +10,5 @@ def delete_html_tags(input_file_path, output_file_path):
     # Записуємо очищений текст у вихідний файл
     with open(output_file_path, 'w', encoding='utf-8') as file:
         file.write(text)
-    delete_html_tags("C:/Users/vgumenyuk1/Downloads/draft.html", "C:/Users/vgumenyuk1/Downloads/12345.txt" )
+
+delete_html_tags("C:/Users/vgumenyuk1/Downloads/draft.html", "C:/Users/vgumenyuk1/Downloads/12345.txt" )
