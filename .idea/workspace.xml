@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6f467fb-994b-4491-95c0-bc98eb92aa1b" name="Changes" comment="Зареєструвати ресурси з методами">
-      <change beforePath="$PROJECT_DIR$/../Hello.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database_project2/database_Project2.db-journal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database_project2/Проектуємо базу SQLite _ Python Pro (28.10.2024) Сергей Шейко 28.10.2024, 19_40__Page 1-[1730138827473].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/HW 14.2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject_CRQ_trcebility1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730719715816</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Зареєструвати ресурси з методами">
+      <option name="closed" value="true" />
+      <created>1731335195397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731335195397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
