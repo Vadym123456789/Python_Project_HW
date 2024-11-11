@@ -1,132 +1,132 @@
-from flask import Flask, request, jsonify
-from database_project2.db_setup import create_user, get_user, get_all_items, create_item, get_item_by_id
+from flask import Flask, session, redirect, url_for, render_template, request, flash, jsonify
+import sqlite3
+from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 
-# Створюємо екземпляр Flask застосунку
 app = Flask(__name__)
+app.secret_key = 'your-secret-key'
+
+
+def get_db():
+    db = sqlite3.connect('database_project2/database_Project2.db')
+    db.row_factory = sqlite3.Row
+    return db
+
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'user_login' not in session:
+            return redirect(url_for('login'))
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
+# Допоміжні функції для роботи з БД
+def get_user(login):
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute('SELECT * FROM User WHERE login = ?', (login,))
+    return cursor.fetchone()
+
+
+def create_user(login, password, ipn=None, full_name=None, contacts=None):
+    db = get_db()
+    cursor = db.cursor()
+    try:
+        cursor.execute('''
+            INSERT INTO User (login, password, ipn, full_name, contacts)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (login, password, ipn, full_name, contacts))
+        db.commit()
+        return True
+    except Exception as e:
+        db.rollback()
+        print(f"Error creating user: {e}")
+        return False
+
+
+# Маршрути
+@app.route('/')
+def index():
+    return redirect(url_for('login'))
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        login = request.form['login']
+        password = request.form['password']
+
+        user = get_user(login)
+
+        if user and check_password_hash(user['password'], password):
+            session['user_login'] = login
+            return redirect(url_for('items'))
+        else:
+            flash('Невірний логін або пароль')
+
+    return render_template('login.html')
 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    if request.method == 'GET':
-        # Повертаємо HTML форму для реєстрації
-        return '''
-            <form method="POST">
-                <div>
-                    <label>Login:</label>
-                    <input type="text" name="login" required>
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input type="password" name="password" required>
-                </div>
-                <div>
-                    <label>Full Name:</label>
-                    <input type="text" name="full_name">
-                </div>
-                <div>
-                    <label>Contacts:</label>
-                    <input type="text" name="contacts">
-                </div>
-                <button type="submit">Register</button>
-            </form>
-        '''
-
     if request.method == 'POST':
-        # Перевіряємо, чи дані прийшли як JSON
-        if request.is_json:
-            data = request.get_json()
-        else:
-            # Якщо дані прийшли з форми
-            data = {
-                'login': request.form.get('login'),
-                'password': request.form.get('password'),
-                'full_name': request.form.get('full_name'),
-                'contacts': request.form.get('contacts')
-            }
+        data = request.form
 
-        # Перевіряємо наявність обов'язкових полів
         if not all(key in data for key in ['login', 'password']):
-            return jsonify({
-                'error': 'Відсутні обов\'язкові поля (login, password)'
-            }), 400
+            flash('Відсутні обов\'язкові поля')
+            return render_template('register.html')
 
-        # Перевіряємо чи користувач вже існує
         existing_user = get_user(data['login'])
         if existing_user:
-            return jsonify({
-                'error': 'Користувач з таким логіном вже існує'
-            }), 400
+            flash('Користувач з таким логіном вже існує')
+            return render_template('register.html')
 
-        # Хешуємо пароль для безпеки
         hashed_password = generate_password_hash(data['password'])
-
-        # Створюємо користувача
         success = create_user(
             login=data['login'],
             password=hashed_password,
-            ipn=data.get('ipn'),
             full_name=data.get('full_name'),
             contacts=data.get('contacts')
         )
 
         if success:
-            return jsonify({
-                'message': 'Користувач успішно зареєстрований',
-                'login': data['login']
-            }), 201
+            flash('Реєстрація успішна!')
+            return redirect(url_for('login'))
         else:
-            return jsonify({
-                'error': 'Помилка при створенні користувача'
-            }), 500
+            flash('Помилка при реєстрації')
+
+    return render_template('register.html')
 
 
-# Отримання списку товарів
-@app.route('/items', methods=['GET'])
-def get_items():
-    items = get_all_items()
-    return jsonify(items), 200
+@app.route('/items')
+@login_required
+def items():
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute('SELECT * FROM Item')
+    items = cursor.fetchall()
+    return render_template('items.html', items=items)
 
 
-# Отримання конкретного товару
-@app.route('/items/<int:item_id>', methods=['GET'])
+@app.route('/items/<int:item_id>')
+@login_required
 def get_item(item_id):
-    item = get_item_by_id(item_id)
-    if item:
-        return jsonify(item), 200
-    return jsonify({'error': 'Товар не знайдено'}), 404
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute('SELECT * FROM Item WHERE item_id = ?', (item_id,))
+    item = cursor.fetchone()
+    if item is None:
+        return 'Item not found', 404
+    return jsonify(dict(item))
 
 
-# Створення нового товару
-@app.route('/items', methods=['POST'])
-def add_item():
-    data = request.get_json()
-
-    # Перевіряємо наявність обов'язкових полів
-    if 'name' not in data:
-        return jsonify({
-            'error': 'Відсутнє обов\'язкове поле name'
-        }), 400
-
-    # Створюємо товар
-    item_id = create_item(
-        name=data['name'],
-        description=data.get('description'),
-        price_hour=data.get('price_hour'),
-        price_day=data.get('price_day'),
-        price_week=data.get('price_week'),
-        price_month=data.get('price_month')
-    )
-
-    if item_id:
-        return jsonify({
-            'message': 'Товар успішно створено',
-            'item_id': item_id
-        }), 201
-    else:
-        return jsonify({
-            'error': 'Помилка при створенні товару'
-        }), 500
+@app.route('/logout')
+def logout():
+    session.pop('user_login', None)
+    return redirect(url_for('login'))
 
 
 if __name__ == '__main__':
