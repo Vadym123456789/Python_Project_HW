@@ -1,0 +1,21 @@
+Список товарів
+Користувач: {{ session['user_login'] }} Вийти
+{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+{{ message }}
+{% endfor %} {% endif %} {% endwith %}
+{% for item in items %}
+{{ item['name'] }}
+{{ item['description'] }}
+
+Ціна за годину: {{ item['price_hour'] }}
+
+Ціна за день: {{ item['price_day'] }}
+
+{% if item['price_week'] %}
+Ціна за тиждень: {{ item['price_week'] }}
+
+{% endif %} {% if item['price_month'] %}
+Ціна за місяць: {{ item['price_month'] }}
+
+{% endif %}
+{% endfor %}
