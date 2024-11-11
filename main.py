@@ -2,15 +2,63 @@ from flask import Flask, session, redirect, url_for, render_template, request, f
 import sqlite3
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
+from database_project2.db_setup import DatabaseManager
+import logging
+import os
+
+# Налаштування логування
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('app.log', encoding='utf-8'),  # Додали encoding='utf-8'
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
+# Визначення шляху до бази даних
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE = os.path.join(BASE_DIR, 'database_project2/database_Project2.db')
+
+
+# Додайте нову функцію init_db
+def init_db():
+    logger.info("Initializing database...")
+    try:
+        os.makedirs(os.path.dirname(DATABASE), exist_ok=True)
+
+        with sqlite3.connect(DATABASE) as db:
+            with open('schema.sql', 'r', encoding='utf-8') as f:
+                sql_script = f.read()
+                db.executescript(sql_script)
+            logger.info("Database initialized successfully")
+    except Exception as e:
+        logger.error(f"Failed to initialize database: {e}")
+        raise
+
+def get_db():
+    try:
+        db = sqlite3.connect(DATABASE)
+        db.row_factory = sqlite3.Row
+        db.execute("PRAGMA foreign_keys=ON")
+        return db
+    except sqlite3.Error as e:
+        logger.error(f"Database connection error: {e}")
+        raise
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key'
 
 
 def get_db():
-    db = sqlite3.connect('database_project2/database_Project2.db')
-    db.row_factory = sqlite3.Row
-    return db
+    try:
+        db = sqlite3.connect(DATABASE)
+        db.row_factory = sqlite3.Row
+        return db
+    except sqlite3.Error as e:
+        logger.error(f"Database connection error: {e}")
+        raise
 
 
 def login_required(f):
@@ -23,31 +71,26 @@ def login_required(f):
     return decorated_function
 
 
-# Допоміжні функції для роботи з БД
 def get_user(login):
-    db = get_db()
-    cursor = db.cursor()
-    cursor.execute('SELECT * FROM User WHERE login = ?', (login,))
-    return cursor.fetchone()
-
-
-def create_user(login, password, ipn=None, full_name=None, contacts=None):
-    db = get_db()
-    cursor = db.cursor()
+    logger.debug(f"Searching for user: {login}")
     try:
-        cursor.execute('''
-            INSERT INTO User (login, password, ipn, full_name, contacts)
-            VALUES (?, ?, ?, ?, ?)
-        ''', (login, password, ipn, full_name, contacts))
-        db.commit()
-        return True
+        with DatabaseManager() as db:
+            return db.get_user(login)
     except Exception as e:
-        db.rollback()
-        print(f"Error creating user: {e}")
+        logger.error(f"Error searching for user: {str(e)}")
+        return None
+
+
+def create_user(login, password, full_name=None, contacts=None):
+    logger.debug(f"Attempting to create user: {login}")
+    try:
+        with DatabaseManager() as db:
+            return db.create_user(login, password, full_name=full_name, contacts=contacts)
+    except Exception as e:
+        logger.error(f"Error creating user: {e}")
         return False
 
 
-# Маршрути
 @app.route('/')
 def index():
     return redirect(url_for('login'))
@@ -72,32 +115,48 @@ def login():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    logger.debug("=== Registration page opened ===")
     if request.method == 'POST':
-        data = request.form
+        logger.debug("=== Received POST request ===")
+        try:
+            data = request.form
+            logger.debug(f"Form data: {dict(data)}")
 
-        if not all(key in data for key in ['login', 'password']):
-            flash('Відсутні обов\'язкові поля')
-            return render_template('register.html')
+            if not all(key in data for key in ['login', 'password']):
+                logger.warning("Missing required fields")
+                flash('Відсутні обов\'язкові поля')
+                return render_template('register.html')
 
-        existing_user = get_user(data['login'])
-        if existing_user:
-            flash('Користувач з таким логіном вже існує')
-            return render_template('register.html')
+            logger.debug(f"Checking user: {data['login']}")
+            existing_user = get_user(data['login'])
+            if existing_user:
+                logger.warning(f"User {data['login']} already exists")
+                flash('Користувач з таким логіном вже існує')
+                return render_template('register.html')
 
-        hashed_password = generate_password_hash(data['password'])
-        success = create_user(
-            login=data['login'],
-            password=hashed_password,
-            full_name=data.get('full_name'),
-            contacts=data.get('contacts')
-        )
+            logger.debug("Hashing password...")
+            hashed_password = generate_password_hash(data['password'])
 
-        if success:
-            flash('Реєстрація успішна!')
-            return redirect(url_for('login'))
-        else:
+            logger.debug("Attempting to create user...")
+            success = create_user(
+                login=data['login'],
+                password=hashed_password,
+                full_name=data.get('full_name'),
+                contacts=data.get('contacts')
+            )
+
+            if success:
+                logger.info("Registration successful!")
+                flash('Реєстрація успішна!')
+                return redirect(url_for('login'))
+            else:
+                logger.error("Failed to create user")
+                flash('Помилка при реєстрації')
+        except Exception as e:
+            logger.error(f"Critical error during registration: {str(e)}")
             flash('Помилка при реєстрації')
-
+    else:
+        logger.debug("GET request - showing registration form")
     return render_template('register.html')
 
 
@@ -114,13 +173,15 @@ def items():
 @app.route('/items/<int:item_id>')
 @login_required
 def get_item(item_id):
-    db = get_db()
-    cursor = db.cursor()
-    cursor.execute('SELECT * FROM Item WHERE item_id = ?', (item_id,))
-    item = cursor.fetchone()
-    if item is None:
-        return 'Item not found', 404
-    return jsonify(dict(item))
+    try:
+        with DatabaseManager() as db:
+            item = db.get_item_by_id(item_id)
+            if not item:
+                return 'Item not found', 404
+            return jsonify(item)
+    except Exception as e:
+        logger.error(f"Error fetching item: {e}")
+        return 'Error fetching item', 500
 
 
 @app.route('/logout')
@@ -129,5 +190,41 @@ def logout():
     return redirect(url_for('login'))
 
 
+@app.route('/profile')
+@login_required
+def profile():
+    user_login = session['user_login']
+    user_data = get_user(user_login)
+    return render_template('profile.html', user=user_data)
+
+
 if __name__ == '__main__':
+    logger.info("Starting Flask server...")
+
+    # Перевіряємо наявність бази даних
+    if not os.path.exists(DATABASE):
+        logger.warning("Database file not found, creating new database")
+        try:
+            init_db()
+        except Exception as e:
+            logger.error(f"Failed to create database: {e}")
+            exit(1)
+
+    # Перевіряємо чи можна підключитися до бази даних
+    try:
+        with get_db() as db:
+            cursor = db.cursor()
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            tables = cursor.fetchall()
+            logger.info(f"Connected to database. Found tables: {[table[0] for table in tables]}")
+    except Exception as e:
+        logger.error(f"Failed to connect to database: {e}")
+        logger.info("Attempting to reinitialize database...")
+        try:
+            os.remove(DATABASE)
+            init_db()
+        except Exception as e:
+            logger.error(f"Failed to reinitialize database: {e}")
+            exit(1)
+
     app.run(debug=True)

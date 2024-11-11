@@ -1,107 +1,154 @@
 import sqlite3
 import os
+from typing import Optional, List, Dict, Any
+import logging
+
+logger = logging.getLogger(__name__)
 
 
-# Підключення до бази даних (шлях до файлу бази даних)
-def connect_to_database(db_path):
-    try:
-        connection = sqlite3.connect(db_path)
-        print("Підключення до бази даних встановлено")
-        return connection
-    except sqlite3.Error as e:
-        print(f"Помилка підключення до бази даних: {e}")
-        return None
+class DatabaseManager:
+    def __init__(self,
+                 db_path: str = r'C:\Users\vgumenyuk1\Documents\Python projects\pythonProject 2\database_project2\database_Project2.db'):
+        self.db_path = db_path
+        self.connection = None
+        self.cursor = None
 
+    def __enter__(self):
+        self.connect()
+        return self
 
-# Створення таблиць у базі даних
-def create_tables(cursor):
-    create_tables_queries = [
-        '''
-        CREATE TABLE IF NOT EXISTS User (
-            login TEXT PRIMARY KEY,
-            password TEXT NOT NULL,
-            ipn TEXT UNIQUE,
-            full_name TEXT,
-            contacts TEXT,
-            photo BLOB
-        );
-        ''',
-        '''
-        CREATE TABLE IF NOT EXISTS Item (
-            item_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            photo BLOB,
-            name TEXT NOT NULL,
-            description TEXT,
-            price_hour REAL,
-            price_day REAL,
-            price_week REAL,
-            price_month REAL
-        );
-        ''',
-        '''
-        CREATE TABLE IF NOT EXISTS Contract (
-            contract_num INTEGER PRIMARY KEY AUTOINCREMENT,
-            text TEXT,
-            start_date DATE,
-            end_date DATE,
-            leaser TEXT,
-            taker TEXT,
-            item_id INTEGER,
-            FOREIGN KEY (leaser) REFERENCES User(login),
-            FOREIGN KEY (taker) REFERENCES User(login),
-            FOREIGN KEY (item_id) REFERENCES Item(item_id)
-        );
-        ''',
-        '''
-        CREATE TABLE IF NOT EXISTS Feedback (
-            feedback_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            author TEXT,
-            user TEXT,
-            text TEXT,
-            grade INTEGER CHECK (grade BETWEEN 1 AND 5),
-            contract_num INTEGER,
-            FOREIGN KEY (author) REFERENCES User(login),
-            FOREIGN KEY (user) REFERENCES User(login),
-            FOREIGN KEY (contract_num) REFERENCES Contract(contract_num)
-        );
-        ''',
-        '''
-        CREATE TABLE IF NOT EXISTS SearchHistory (
-            search_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user TEXT,
-            search_text TEXT,
-            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (user) REFERENCES User(login)
-        );
-        ''',
-        '''
-        CREATE TABLE IF NOT EXISTS Favorites (
-            favorite_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user TEXT,
-            item_id INTEGER,
-            FOREIGN KEY (user) REFERENCES User(login),
-            FOREIGN KEY (item_id) REFERENCES Item(item_id)
-        );
-        '''
-    ]
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
 
-    for query in create_tables_queries:
-        cursor.execute(query)
-    print("Таблиці успішно створені")
+    def connect(self) -> None:
+        """Встановлює з'єднання з базою даних"""
+        try:
+            self.connection = sqlite3.connect(self.db_path)
+            self.connection.row_factory = sqlite3.Row
+            self.cursor = self.connection.cursor()
+            logger.debug("Database connection established")
+        except sqlite3.Error as e:
+            logger.error(f"Database connection error: {e}")
+            raise
 
+    def close(self) -> None:
+        """Закриває з'єднання з базою даних"""
+        if self.connection:
+            self.connection.close()
+            logger.debug("Database connection closed")
 
-# Основна функція для підключення до бази даних і створення таблиць
-def main():
-    db_path = r'C:\Users\vgumenyuk1\Documents\Python projects\pythonProject 2\database_project2\database_Project2.db'
-    connection = connect_to_database(db_path)
+    def commit(self) -> None:
+        """Зберігає зміни в базі даних"""
+        if self.connection:
+            self.connection.commit()
 
-    if connection:
-        cursor = connection.cursor()
-        create_tables(cursor)
-        connection.commit()
-        connection.close()
-        print("Підключення до бази даних закрито")
+    def rollback(self) -> None:
+        """Відміняє зміни в базі даних"""
+        if self.connection:
+            self.connection.rollback()
 
+    # Методи для роботи з користувачами
+    def create_user(self, login: str, password: str, ipn: str = None,
+                    full_name: str = None, contacts: str = None) -> bool:
+        """Створює нового користувача"""
+        try:
+            self.cursor.execute('''
+                INSERT INTO User (login, password, ipn, full_name, contacts)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (login, password, ipn, full_name, contacts))
+            self.commit()
+            logger.info(f"User {login} created successfully")
+            return True
+        except sqlite3.Error as e:
+            logger.error(f"Error creating user: {e}")
+            self.rollback()
+            return False
 
-if __name__ == "__main__":
-    main()
+    def get_user(self, login: str) -> Optional[Dict]:
+        """Отримує користувача за логіном"""
+        try:
+            self.cursor.execute('SELECT * FROM User WHERE login = ?', (login,))
+            user = self.cursor.fetchone()
+            return dict(user) if user else None
+        except sqlite3.Error as e:
+            logger.error(f"Error getting user: {e}")
+            return None
+
+    # Методи для роботи з товарами
+    def get_all_items(self) -> List[Dict]:
+        """Отримує всі товари"""
+        try:
+            self.cursor.execute('SELECT * FROM Item')
+            items = self.cursor.fetchall()
+            return [dict(item) for item in items]
+        except sqlite3.Error as e:
+            logger.error(f"Error getting items: {e}")
+            return []
+
+    def create_item(self, name: str, description: str = None,
+                    price_hour: float = None, price_day: float = None,
+                    price_week: float = None, price_month: float = None) -> Optional[int]:
+        """Створює новий товар"""
+        try:
+            self.cursor.execute('''
+                INSERT INTO Item (name, description, price_hour, price_day, price_week, price_month)
+                VALUES (?, ?, ?, ?, ?, ?)
+            ''', (name, description, price_hour, price_day, price_week, price_month))
+            self.commit()
+            return self.cursor.lastrowid
+        except sqlite3.Error as e:
+            logger.error(f"Error creating item: {e}")
+            self.rollback()
+            return None
+
+    def get_item_by_id(self, item_id: int) -> Optional[Dict]:
+        """Отримує товар за ID"""
+        try:
+            self.cursor.execute('SELECT * FROM Item WHERE item_id = ?', (item_id,))
+            item = self.cursor.fetchone()
+            return dict(item) if item else None
+        except sqlite3.Error as e:
+            logger.error(f"Error getting item: {e}")
+            return None
+
+    # Загальні методи для роботи з базою даних
+    def execute_query(self, query: str, params: tuple = None) -> Optional[List[Dict]]:
+        """Виконує довільний SQL запит"""
+        try:
+            if params:
+                self.cursor.execute(query, params)
+            else:
+                self.cursor.execute(query)
+            result = self.cursor.fetchall()
+            self.commit()
+            return [dict(row) for row in result] if result else None
+        except sqlite3.Error as e:
+            logger.error(f"Query execution error: {e}")
+            self.rollback()
+            return None
+
+    def select(self, table: str, columns: List[str] = None,
+               where: Dict[str, Any] = None, limit: int = None) -> List[Dict]:
+        """Генерує та виконує SELECT запит"""
+        try:
+            columns_str = "*" if not columns else ", ".join(columns)
+            query = f"SELECT {columns_str} FROM {table}"
+
+            params = ()
+            if where:
+                conditions = []
+                for key, value in where.items():
+                    conditions.append(f"{key} = ?")
+                    params += (value,)
+                query += " WHERE " + " AND ".join(conditions)
+
+            if limit:
+                query += f" LIMIT {limit}"
+
+            self.cursor.execute(query, params)
+            results = self.cursor.fetchall()
+            return [dict(row) for row in results]
+
+        except sqlite3.Error as e:
+            logger.error(f"Select error: {e}")
+            return []
