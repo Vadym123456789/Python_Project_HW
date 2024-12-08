@@ -16,20 +16,19 @@
     <ul class="item-list">
         {% for item in items %}
             <li class="item">
-                <h2>{{ item['name'] }}</h2>
-                <p>{{ item['description'] }}</p>
-                <p>Ціна за годину: {{ item['price_hour'] }}</p>
-                <p>Ціна за день: {{ item['price_day'] }}</p>
+                <h2><a href="{{ url_for('get_item', item_id=item.id) }}">{{ item.name }}</a></h2>
+                <p>{{ item.description }}</p>
+                <p>Ціна за годину: {{ item.price_hour }}</p>
+                <p>Ціна за день: {{ item.price_day }}</p>
 
-                {% if item['price_week'] %}
-                    <p>Ціна за тиждень: {{ item['price_week'] }}</p>
+                {% if item.price_week %}
+                    <p>Ціна за тиждень: {{ item.price_week }}</p>
                 {% endif %}
 
-                {% if item['price_month'] %}
-                    <p>Ціна за місяць: {{ item['price_month'] }}</p>
+                {% if item.price_month %}
+                    <p>Ціна за місяць: {{ item.price_month }}</p>
                 {% endif %}
 
-                <a href="{{ url_for('get_item', item_id=item['id']) }}">Детальніше</a>
             </li>
         {% endfor %}
     </ul>

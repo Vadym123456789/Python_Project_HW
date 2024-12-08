@@ -16,7 +16,7 @@ from flask import (
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from database_project2.db_setup import DatabaseManager
-from models import Item, Session
+from models import Item, Session, User
 
 # Налаштування логування
 logging.basicConfig(
@@ -78,21 +78,27 @@ def login_required(f):
 def get_user(login):
     logger.debug(f"Searching for user: {login}")
     try:
-        with DatabaseManager() as db:
-            return db.get_user(login)
+        session = Session()
+        user = session.query(User).filter(User.login == login).first()
+        session.close()
+        return user.__dict__ if user else None
     except Exception as e:
         logger.error(f"Error searching for user: {str(e)}")
         return None
 
 
-def create_user(login, password, full_name=None, contacts=None):
+def create_user(login, password, full_name=None, contacts=None, ipn=None):
     logger.debug(f"Attempting to create user: {login}")
     try:
-        with DatabaseManager() as db:
-            return db.create_user(
-                login, password, full_name=full_name, contacts=contacts
-            )
-    except Exception as e:  # Обробляємо всі винятки
+        session = Session()
+        new_user = User(login=login, password=password, full_name=full_name,
+                        contacts=contacts, ipn=ipn)
+        session.add(new_user)
+        session.commit()
+        session.close()
+        logger.info(f"User {login} created successfully")
+        return True
+    except Exception as e:
         logger.error(f"Error creating user: {e}")
         return False
 
@@ -177,7 +183,7 @@ def items():
     return render_template("items.html", items=items)
 
 
-@app.route("/items/<int:item_id>")
+@app.route('/items/<int:item_id>')
 @login_required
 def get_item(item_id):
     try:
@@ -185,11 +191,14 @@ def get_item(item_id):
         item = session.query(Item).filter(Item.id == item_id).first()
         session.close()
         if not item:
-            return "Item not found", 404
-        return jsonify(item)
+            return 'Item not found', 404
+
+        item_dict = {c.name: getattr(item, c.name) for c in item.__table__.columns}  # Конвертуємо об'єкт Item в словник
+        return jsonify(item_dict)
+
     except Exception as e:
         logger.error(f"Error fetching item: {e}")
-        return "Error fetching item", 500
+        return 'Error fetching item', 500
 
 
 @app.route("/logout")

@@ -579,3 +579,113 @@
 2024-11-30 11:24:07,933 - INFO - 127.0.0.1 - - [30/Nov/2024 11:24:07] "GET /items HTTP/1.1" 200 -
 2024-11-30 11:24:31,576 - ERROR - Error fetching item: Object of type Item is not JSON serializable
 2024-11-30 11:24:31,577 - INFO - 127.0.0.1 - - [30/Nov/2024 11:24:31] "[35m[1mGET /items/1 HTTP/1.1[0m" 500 -
+2024-12-08 12:20:29,440 - INFO - Starting Flask server...
+2024-12-08 12:20:29,443 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 12:20:29,576 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 12:20:29,576 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 12:20:29,580 - INFO -  * Restarting with stat
+2024-12-08 12:20:31,612 - INFO - Starting Flask server...
+2024-12-08 12:20:31,614 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 12:20:31,690 - WARNING -  * Debugger is active!
+2024-12-08 12:20:31,709 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 12:20:33,481 - INFO - 127.0.0.1 - - [08/Dec/2024 12:20:33] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 12:20:33,521 - INFO - 127.0.0.1 - - [08/Dec/2024 12:20:33] "GET /login HTTP/1.1" 200 -
+2024-12-08 12:20:33,637 - INFO - 127.0.0.1 - - [08/Dec/2024 12:20:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-08 12:20:37,907 - DEBUG - === Registration page opened ===
+2024-12-08 12:20:37,907 - DEBUG - GET request - showing registration form
+2024-12-08 12:20:37,915 - INFO - 127.0.0.1 - - [08/Dec/2024 12:20:37] "GET /register HTTP/1.1" 200 -
+2024-12-08 12:21:00,235 - DEBUG - === Registration page opened ===
+2024-12-08 12:21:00,235 - DEBUG - === Received POST request ===
+2024-12-08 12:21:00,239 - DEBUG - Form data: {'login': 'user1', 'password': 'user1', 'full_name': 'TEst Test', 'contacts': '+30800000000'}
+2024-12-08 12:21:00,240 - DEBUG - Checking user: user1
+2024-12-08 12:21:00,240 - DEBUG - Searching for user: user1
+2024-12-08 12:21:00,242 - DEBUG - Database connection established
+2024-12-08 12:21:00,243 - DEBUG - Database connection closed
+2024-12-08 12:21:00,243 - WARNING - User user1 already exists
+2024-12-08 12:21:00,245 - INFO - 127.0.0.1 - - [08/Dec/2024 12:21:00] "POST /register HTTP/1.1" 200 -
+2024-12-08 12:21:20,208 - DEBUG - === Registration page opened ===
+2024-12-08 12:21:20,208 - DEBUG - === Received POST request ===
+2024-12-08 12:21:20,208 - DEBUG - Form data: {'login': 'Test3', 'password': 'Test3', 'full_name': 'Test3', 'contacts': '+30800000000'}
+2024-12-08 12:21:20,208 - DEBUG - Checking user: Test3
+2024-12-08 12:21:20,208 - DEBUG - Searching for user: Test3
+2024-12-08 12:21:20,209 - DEBUG - Database connection established
+2024-12-08 12:21:20,210 - DEBUG - Database connection closed
+2024-12-08 12:21:20,210 - DEBUG - Hashing password...
+2024-12-08 12:21:20,408 - DEBUG - Attempting to create user...
+2024-12-08 12:21:20,408 - DEBUG - Attempting to create user: Test3
+2024-12-08 12:21:20,410 - DEBUG - Database connection established
+2024-12-08 12:21:20,420 - INFO - User Test3 created successfully
+2024-12-08 12:21:20,424 - DEBUG - Database connection closed
+2024-12-08 12:21:20,425 - INFO - Registration successful!
+2024-12-08 12:21:20,426 - INFO - 127.0.0.1 - - [08/Dec/2024 12:21:20] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-08 12:21:20,434 - INFO - 127.0.0.1 - - [08/Dec/2024 12:21:20] "GET /login HTTP/1.1" 200 -
+2024-12-08 12:21:33,184 - DEBUG - Searching for user: Test3
+2024-12-08 12:21:33,185 - DEBUG - Database connection established
+2024-12-08 12:21:33,187 - DEBUG - Database connection closed
+2024-12-08 12:21:33,484 - INFO - 127.0.0.1 - - [08/Dec/2024 12:21:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 12:21:33,505 - INFO - 127.0.0.1 - - [08/Dec/2024 12:21:33] "GET /items HTTP/1.1" 200 -
+2024-12-08 12:21:49,309 - INFO - 127.0.0.1 - - [08/Dec/2024 12:21:49] "GET /items HTTP/1.1" 200 -
+2024-12-08 12:25:10,263 - ERROR - Error fetching item: Object of type Item is not JSON serializable
+2024-12-08 12:25:10,264 - INFO - 127.0.0.1 - - [08/Dec/2024 12:25:10] "[35m[1mGET /items/1 HTTP/1.1[0m" 500 -
+2024-12-08 13:11:30,400 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 13:11:30,862 - INFO -  * Restarting with stat
+2024-12-08 13:17:58,653 - INFO - Starting Flask server...
+2024-12-08 13:17:58,657 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:17:58,777 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 13:17:58,777 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 13:17:58,781 - INFO -  * Restarting with stat
+2024-12-08 13:18:00,642 - INFO - Starting Flask server...
+2024-12-08 13:18:00,644 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:18:00,694 - WARNING -  * Debugger is active!
+2024-12-08 13:18:00,709 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 13:18:08,507 - INFO - 127.0.0.1 - - [08/Dec/2024 13:18:08] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 13:18:08,531 - INFO - 127.0.0.1 - - [08/Dec/2024 13:18:08] "GET /login HTTP/1.1" 200 -
+2024-12-08 13:18:24,055 - DEBUG - Searching for user: Test3
+2024-12-08 13:18:24,282 - INFO - 127.0.0.1 - - [08/Dec/2024 13:18:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 13:18:24,301 - INFO - 127.0.0.1 - - [08/Dec/2024 13:18:24] "GET /items HTTP/1.1" 200 -
+2024-12-08 13:18:34,233 - ERROR - Error fetching item: Object of type Item is not JSON serializable
+2024-12-08 13:18:34,234 - INFO - 127.0.0.1 - - [08/Dec/2024 13:18:34] "[35m[1mGET /items/1 HTTP/1.1[0m" 500 -
+2024-12-08 13:21:14,098 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 13:21:14,269 - INFO -  * Restarting with stat
+2024-12-08 13:21:16,076 - INFO - Starting Flask server...
+2024-12-08 13:21:16,078 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:21:16,140 - WARNING -  * Debugger is active!
+2024-12-08 13:21:16,163 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 13:21:21,868 - INFO - Starting Flask server...
+2024-12-08 13:21:21,870 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:21:21,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 13:21:21,977 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 13:21:21,980 - INFO -  * Restarting with stat
+2024-12-08 13:21:23,701 - INFO - Starting Flask server...
+2024-12-08 13:21:23,703 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:21:23,765 - WARNING -  * Debugger is active!
+2024-12-08 13:21:23,786 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 13:21:30,682 - INFO - 127.0.0.1 - - [08/Dec/2024 13:21:30] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 13:21:30,739 - INFO - 127.0.0.1 - - [08/Dec/2024 13:21:30] "GET /login HTTP/1.1" 200 -
+2024-12-08 13:21:41,987 - DEBUG - Searching for user: Test3
+2024-12-08 13:21:42,335 - INFO - 127.0.0.1 - - [08/Dec/2024 13:21:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 13:21:42,366 - INFO - 127.0.0.1 - - [08/Dec/2024 13:21:42] "GET /items HTTP/1.1" 200 -
+2024-12-08 13:21:47,010 - ERROR - Error fetching item: Object of type InstanceState is not JSON serializable
+2024-12-08 13:21:47,011 - INFO - 127.0.0.1 - - [08/Dec/2024 13:21:47] "[35m[1mGET /items/1 HTTP/1.1[0m" 500 -
+2024-12-08 13:21:55,394 - ERROR - Error fetching item: Object of type InstanceState is not JSON serializable
+2024-12-08 13:21:55,395 - INFO - 127.0.0.1 - - [08/Dec/2024 13:21:55] "[35m[1mGET /items/2 HTTP/1.1[0m" 500 -
+2024-12-08 13:23:26,484 - INFO - Starting Flask server...
+2024-12-08 13:23:26,489 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:23:26,608 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 13:23:26,608 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 13:23:26,611 - INFO -  * Restarting with stat
+2024-12-08 13:23:28,788 - INFO - Starting Flask server...
+2024-12-08 13:23:28,791 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:23:28,862 - WARNING -  * Debugger is active!
+2024-12-08 13:23:28,883 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 13:23:32,814 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:32] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 13:23:32,843 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:32] "GET /login HTTP/1.1" 200 -
+2024-12-08 13:23:50,744 - DEBUG - Searching for user: Test3
+2024-12-08 13:23:50,956 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 13:23:50,977 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:50] "GET /items HTTP/1.1" 200 -
+2024-12-08 13:23:53,905 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:53] "GET /items/1 HTTP/1.1" 200 -
+2024-12-08 13:23:59,008 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:59] "GET /items/1 HTTP/1.1" 200 -
