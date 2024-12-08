@@ -1,21 +1,38 @@
-Список товарів
-Користувач: {{ session['user_login'] }} Вийти
-{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-{{ message }}
-{% endfor %} {% endif %} {% endwith %}
-{% for item in items %}
-{{ item['name'] }}
-{{ item['description'] }}
+<h1>Список товарів</h1>
 
-Ціна за годину: {{ item['price_hour'] }}
+<p>Користувач: {{ session['user_login'] }} <a href="{{ url_for('logout') }}">Вийти</a></p>
 
-Ціна за день: {{ item['price_day'] }}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith  %}
 
-{% if item['price_week'] %}
-Ціна за тиждень: {{ item['price_week'] }}
+{% if items %}
+    <ul class="item-list">
+        {% for item in items %}
+            <li class="item">
+                <h2>{{ item['name'] }}</h2>
+                <p>{{ item['description'] }}</p>
+                <p>Ціна за годину: {{ item['price_hour'] }}</p>
+                <p>Ціна за день: {{ item['price_day'] }}</p>
 
-{% endif %} {% if item['price_month'] %}
-Ціна за місяць: {{ item['price_month'] }}
+                {% if item['price_week'] %}
+                    <p>Ціна за тиждень: {{ item['price_week'] }}</p>
+                {% endif %}
 
+                {% if item['price_month'] %}
+                    <p>Ціна за місяць: {{ item['price_month'] }}</p>
+                {% endif %}
+
+                <a href="{{ url_for('get_item', item_id=item['id']) }}">Детальніше</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Список товарів порожній.</p>
 {% endif %}
-{% endfor %}
