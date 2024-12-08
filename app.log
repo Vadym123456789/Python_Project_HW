@@ -1,0 +1,581 @@
+2024-11-11 20:13:44,394 - WARNING -  * Debugger is active!
+2024-11-11 20:13:44,402 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:14:03,265 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 20:14:03,265 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 20:14:03,267 - INFO -  * Restarting with stat
+2024-11-11 20:14:04,209 - WARNING -  * Debugger is active!
+2024-11-11 20:14:04,216 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:14:23,768 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-11 20:14:23,833 - INFO -  * Restarting with stat
+2024-11-11 20:14:25,065 - WARNING -  * Debugger is active!
+2024-11-11 20:14:25,071 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:14:39,553 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-11 20:14:39,605 - INFO -  * Restarting with stat
+2024-11-11 20:14:40,538 - WARNING -  * Debugger is active!
+2024-11-11 20:14:40,545 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:14:59,169 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-11 20:14:59,382 - INFO -  * Restarting with stat
+2024-11-11 20:15:00,800 - WARNING -  * Debugger is active!
+2024-11-11 20:15:00,810 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:15:22,517 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-11 20:15:22,578 - INFO -  * Restarting with stat
+2024-11-11 20:17:36,084 - INFO - Starting Flask server...
+2024-11-11 20:17:36,245 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 20:17:36,245 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 20:17:36,248 - INFO -  * Restarting with stat
+2024-11-11 20:17:37,143 - INFO - Starting Flask server...
+2024-11-11 20:17:37,202 - WARNING -  * Debugger is active!
+2024-11-11 20:17:37,214 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:17:47,863 - INFO - 127.0.0.1 - - [11/Nov/2024 20:17:47] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-11 20:17:47,890 - INFO - 127.0.0.1 - - [11/Nov/2024 20:17:47] "GET /login HTTP/1.1" 200 -
+2024-11-11 20:17:49,893 - DEBUG - === Registration page opened ===
+2024-11-11 20:17:49,893 - DEBUG - GET request - showing registration form
+2024-11-11 20:17:49,900 - INFO - 127.0.0.1 - - [11/Nov/2024 20:17:49] "GET /register HTTP/1.1" 200 -
+2024-11-11 20:17:59,683 - DEBUG - === Registration page opened ===
+2024-11-11 20:17:59,683 - DEBUG - === Received POST request ===
+2024-11-11 20:17:59,717 - DEBUG - Checking user: Test2
+2024-11-11 20:17:59,717 - DEBUG - Searching for user: Test2
+2024-11-11 20:17:59,729 - ERROR - Error searching for user: file is not a database
+2024-11-11 20:17:59,730 - DEBUG - Hashing password...
+2024-11-11 20:17:59,873 - DEBUG - Attempting to create user...
+2024-11-11 20:17:59,874 - DEBUG - Attempting to create user: Test2
+2024-11-11 20:17:59,875 - ERROR - Database error while creating user: file is not a database
+2024-11-11 20:17:59,876 - ERROR - Failed to create user
+2024-11-11 20:17:59,876 - INFO - 127.0.0.1 - - [11/Nov/2024 20:17:59] "POST /register HTTP/1.1" 200 -
+2024-11-11 20:23:40,801 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-11 20:23:40,915 - INFO -  * Restarting with stat
+2024-11-11 20:23:42,439 - INFO - Starting Flask server...
+2024-11-11 20:23:42,544 - WARNING -  * Debugger is active!
+2024-11-11 20:23:42,553 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:24:57,543 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-11 20:24:57,664 - INFO -  * Restarting with stat
+2024-11-11 20:24:58,434 - INFO - Starting Flask server...
+2024-11-11 20:24:58,476 - WARNING -  * Debugger is active!
+2024-11-11 20:24:58,481 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:26:17,585 - INFO - Starting Flask server...
+2024-11-11 20:26:17,587 - ERROR - Failed to connect to database: file is not a database
+2024-11-11 20:26:17,587 - INFO - Attempting to reinitialize database...
+2024-11-11 20:26:17,588 - ERROR - Failed to reinitialize database: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2/database_Project2.db'
+2024-11-11 20:27:19,813 - INFO - Starting Flask server...
+2024-11-11 20:27:19,818 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-11 20:27:19,894 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 20:27:19,894 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 20:27:19,897 - INFO -  * Restarting with stat
+2024-11-11 20:27:20,661 - INFO - Starting Flask server...
+2024-11-11 20:27:20,663 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-11 20:27:20,710 - WARNING -  * Debugger is active!
+2024-11-11 20:27:20,717 - INFO -  * Debugger PIN: 139-560-578
+2024-11-11 20:27:27,079 - INFO - 127.0.0.1 - - [11/Nov/2024 20:27:27] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-11 20:27:27,106 - INFO - 127.0.0.1 - - [11/Nov/2024 20:27:27] "GET /login HTTP/1.1" 200 -
+2024-11-11 20:27:29,741 - DEBUG - === Registration page opened ===
+2024-11-11 20:27:29,741 - DEBUG - GET request - showing registration form
+2024-11-11 20:27:29,748 - INFO - 127.0.0.1 - - [11/Nov/2024 20:27:29] "GET /register HTTP/1.1" 200 -
+2024-11-11 20:27:39,736 - DEBUG - === Registration page opened ===
+2024-11-11 20:27:39,736 - DEBUG - === Received POST request ===
+2024-11-11 20:27:39,740 - DEBUG - Form data: {'login': 'Test2', 'password': 'йцук1234', 'full_name': 'Test User', 'contacts': 'test@test.com'}
+2024-11-11 20:27:39,740 - DEBUG - Checking user: Test2
+2024-11-11 20:27:39,740 - DEBUG - Searching for user: Test2
+2024-11-11 20:27:39,741 - INFO - User search result: not found
+2024-11-11 20:27:39,741 - DEBUG - Hashing password...
+2024-11-11 20:27:39,927 - DEBUG - Attempting to create user...
+2024-11-11 20:27:39,927 - DEBUG - Attempting to create user: Test2
+2024-11-11 20:27:39,941 - INFO - User Test2 created successfully
+2024-11-11 20:27:39,943 - INFO - Registration successful!
+2024-11-11 20:27:39,946 - INFO - 127.0.0.1 - - [11/Nov/2024 20:27:39] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-11 20:27:39,966 - INFO - 127.0.0.1 - - [11/Nov/2024 20:27:39] "GET /login HTTP/1.1" 200 -
+2024-11-11 20:43:17,561 - INFO - Starting Flask server...
+2024-11-11 20:43:17,569 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-11 20:43:17,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 20:43:17,708 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 20:43:17,711 - INFO -  * Restarting with stat
+2024-11-11 20:43:19,005 - INFO - Starting Flask server...
+2024-11-11 20:43:19,007 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-11 20:43:19,076 - WARNING -  * Debugger is active!
+2024-11-11 20:43:19,088 - INFO -  * Debugger PIN: 139-560-578
+2024-11-17 14:11:18,870 - INFO - Starting Flask server...
+2024-11-17 14:11:18,877 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-17 14:11:19,062 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-17 14:11:19,062 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-17 14:11:19,065 - INFO -  * Restarting with stat
+2024-11-17 14:11:20,157 - INFO - Starting Flask server...
+2024-11-17 14:11:20,159 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-17 14:11:20,220 - WARNING -  * Debugger is active!
+2024-11-17 14:11:20,228 - INFO -  * Debugger PIN: 139-560-578
+2024-11-17 14:11:24,007 - INFO - 127.0.0.1 - - [17/Nov/2024 14:11:24] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-17 14:11:24,065 - INFO - 127.0.0.1 - - [17/Nov/2024 14:11:24] "GET /login HTTP/1.1" 200 -
+2024-11-17 14:11:24,381 - INFO - 127.0.0.1 - - [17/Nov/2024 14:11:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-17 14:11:28,401 - DEBUG - === Registration page opened ===
+2024-11-17 14:11:28,402 - DEBUG - GET request - showing registration form
+2024-11-17 14:11:28,412 - INFO - 127.0.0.1 - - [17/Nov/2024 14:11:28] "GET /register HTTP/1.1" 200 -
+2024-11-17 14:11:48,480 - DEBUG - === Registration page opened ===
+2024-11-17 14:11:48,480 - DEBUG - === Received POST request ===
+2024-11-17 14:11:48,485 - DEBUG - Form data: {'login': 'Vadym123456789', 'password': 'qwer', 'full_name': 'Vadym Gumenyuk', 'contacts': '+30800000000'}
+2024-11-17 14:11:48,485 - DEBUG - Checking user: Vadym123456789
+2024-11-17 14:11:48,485 - DEBUG - Searching for user: Vadym123456789
+2024-11-17 14:11:48,487 - DEBUG - Database connection established
+2024-11-17 14:11:48,490 - DEBUG - Database connection closed
+2024-11-17 14:11:48,490 - DEBUG - Hashing password...
+2024-11-17 14:11:48,906 - DEBUG - Attempting to create user...
+2024-11-17 14:11:48,906 - DEBUG - Attempting to create user: Vadym123456789
+2024-11-17 14:11:48,908 - DEBUG - Database connection established
+2024-11-17 14:11:48,924 - INFO - User Vadym123456789 created successfully
+2024-11-17 14:11:48,930 - DEBUG - Database connection closed
+2024-11-17 14:11:48,931 - INFO - Registration successful!
+2024-11-17 14:11:48,934 - INFO - 127.0.0.1 - - [17/Nov/2024 14:11:48] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-17 14:11:48,946 - INFO - 127.0.0.1 - - [17/Nov/2024 14:11:48] "GET /login HTTP/1.1" 200 -
+2024-11-18 11:36:02,601 - INFO - 127.0.0.1 - - [18/Nov/2024 11:36:02] "GET /login HTTP/1.1" 200 -
+2024-11-24 14:00:51,606 - INFO - Starting Flask server...
+2024-11-24 14:00:51,617 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-24 14:00:51,770 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-24 14:00:51,770 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-24 14:00:51,773 - INFO -  * Restarting with stat
+2024-11-24 14:00:53,096 - INFO - Starting Flask server...
+2024-11-24 14:00:53,098 - INFO - Connected to database. Found tables: ['User', 'Item', 'sqlite_sequence', 'Contract', 'Feedback', 'SearchHistory', 'Favorites']
+2024-11-24 14:00:53,179 - WARNING -  * Debugger is active!
+2024-11-24 14:00:53,203 - INFO -  * Debugger PIN: 139-560-578
+2024-11-28 09:49:57,122 - INFO - Starting Flask server...
+2024-11-28 09:49:57,140 - INFO - Connected to database. Found tables: []
+2024-11-28 09:49:57,356 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 09:49:57,356 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 09:49:57,363 - INFO -  * Restarting with stat
+2024-11-28 09:49:58,643 - INFO - Starting Flask server...
+2024-11-28 09:49:58,646 - INFO - Connected to database. Found tables: []
+2024-11-28 09:49:58,756 - WARNING -  * Debugger is active!
+2024-11-28 09:49:58,812 - INFO -  * Debugger PIN: 139-560-578
+2024-11-28 09:50:04,725 - INFO - 127.0.0.1 - - [28/Nov/2024 09:50:04] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-28 09:50:04,808 - INFO - 127.0.0.1 - - [28/Nov/2024 09:50:04] "GET /login HTTP/1.1" 200 -
+2024-11-28 09:50:05,115 - INFO - 127.0.0.1 - - [28/Nov/2024 09:50:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-28 09:50:10,735 - DEBUG - === Registration page opened ===
+2024-11-28 09:50:10,736 - DEBUG - GET request - showing registration form
+2024-11-28 09:50:10,741 - INFO - 127.0.0.1 - - [28/Nov/2024 09:50:10] "GET /register HTTP/1.1" 200 -
+2024-11-28 09:50:33,092 - DEBUG - === Registration page opened ===
+2024-11-28 09:50:33,092 - DEBUG - === Received POST request ===
+2024-11-28 09:50:33,095 - DEBUG - Form data: {'login': 'ааааа', 'password': 'вввввв', 'full_name': 'фіва фіва', 'contacts': '+30800000000'}
+2024-11-28 09:50:33,095 - DEBUG - Checking user: ааааа
+2024-11-28 09:50:33,096 - DEBUG - Searching for user: ааааа
+2024-11-28 09:50:33,096 - DEBUG - Database connection established
+2024-11-28 09:50:33,097 - ERROR - Error getting user: no such table: User
+2024-11-28 09:50:33,097 - DEBUG - Database connection closed
+2024-11-28 09:50:33,097 - DEBUG - Hashing password...
+2024-11-28 09:50:33,437 - DEBUG - Attempting to create user...
+2024-11-28 09:50:33,437 - DEBUG - Attempting to create user: ааааа
+2024-11-28 09:50:33,439 - DEBUG - Database connection established
+2024-11-28 09:50:33,441 - ERROR - Error creating user: no such table: User
+2024-11-28 09:50:33,441 - DEBUG - Database connection closed
+2024-11-28 09:50:33,442 - ERROR - Failed to create user
+2024-11-28 09:50:33,444 - INFO - 127.0.0.1 - - [28/Nov/2024 09:50:33] "POST /register HTTP/1.1" 200 -
+2024-11-28 09:51:02,923 - DEBUG - === Registration page opened ===
+2024-11-28 09:51:02,924 - DEBUG - === Received POST request ===
+2024-11-28 09:51:02,924 - DEBUG - Form data: {'login': 'VadymTest1', 'password': '1111111111', 'full_name': 'TEst Test222', 'contacts': 'test1@test.com'}
+2024-11-28 09:51:02,924 - DEBUG - Checking user: VadymTest1
+2024-11-28 09:51:02,924 - DEBUG - Searching for user: VadymTest1
+2024-11-28 09:51:02,926 - DEBUG - Database connection established
+2024-11-28 09:51:02,927 - ERROR - Error getting user: no such table: User
+2024-11-28 09:51:02,927 - DEBUG - Database connection closed
+2024-11-28 09:51:02,927 - DEBUG - Hashing password...
+2024-11-28 09:51:03,148 - DEBUG - Attempting to create user...
+2024-11-28 09:51:03,148 - DEBUG - Attempting to create user: VadymTest1
+2024-11-28 09:51:03,149 - DEBUG - Database connection established
+2024-11-28 09:51:03,150 - ERROR - Error creating user: no such table: User
+2024-11-28 09:51:03,150 - DEBUG - Database connection closed
+2024-11-28 09:51:03,150 - ERROR - Failed to create user
+2024-11-28 09:51:03,151 - INFO - 127.0.0.1 - - [28/Nov/2024 09:51:03] "POST /register HTTP/1.1" 200 -
+2024-11-28 10:14:42,640 - INFO - Starting Flask server...
+2024-11-28 10:14:42,643 - INFO - Connected to database. Found tables: []
+2024-11-28 10:14:42,774 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 10:14:42,776 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 10:14:42,780 - INFO -  * Restarting with stat
+2024-11-28 10:14:44,505 - INFO - Starting Flask server...
+2024-11-28 10:14:44,508 - INFO - Connected to database. Found tables: []
+2024-11-28 10:14:44,573 - WARNING -  * Debugger is active!
+2024-11-28 10:14:44,606 - INFO -  * Debugger PIN: 139-560-578
+2024-11-28 10:15:04,860 - INFO - 127.0.0.1 - - [28/Nov/2024 10:15:04] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-28 10:15:04,901 - INFO - 127.0.0.1 - - [28/Nov/2024 10:15:04] "GET /login HTTP/1.1" 200 -
+2024-11-28 10:15:15,361 - INFO - 127.0.0.1 - - [28/Nov/2024 10:15:15] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-11-28 10:15:15,371 - INFO - 127.0.0.1 - - [28/Nov/2024 10:15:15] "GET /login HTTP/1.1" 200 -
+2024-11-28 10:15:51,698 - INFO - 127.0.0.1 - - [28/Nov/2024 10:15:51] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-11-28 10:15:51,705 - INFO - 127.0.0.1 - - [28/Nov/2024 10:15:51] "GET /login HTTP/1.1" 200 -
+2024-11-28 10:23:01,675 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-28 10:23:01,792 - INFO -  * Restarting with stat
+2024-11-28 10:23:02,535 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-28 10:23:02,674 - INFO -  * Restarting with stat
+2024-11-28 10:23:03,181 - INFO - Starting Flask server...
+2024-11-28 10:23:03,184 - INFO - Connected to database. Found tables: []
+2024-11-28 10:23:03,280 - WARNING -  * Debugger is active!
+2024-11-28 10:23:03,309 - INFO -  * Debugger PIN: 139-560-578
+2024-11-28 10:23:04,107 - INFO - Starting Flask server...
+2024-11-28 10:23:04,109 - INFO - Connected to database. Found tables: []
+2024-11-28 10:23:04,177 - WARNING -  * Debugger is active!
+2024-11-28 10:23:04,204 - INFO -  * Debugger PIN: 139-560-578
+2024-11-28 10:23:32,539 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-28 10:23:32,594 - INFO -  * Restarting with stat
+2024-11-28 10:23:33,601 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-28 10:23:33,686 - INFO -  * Restarting with stat
+2024-11-28 10:34:31,615 - INFO - Starting Flask server...
+2024-11-28 10:34:31,618 - INFO - Connected to database. Found tables: ['Item']
+2024-11-28 10:34:31,862 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 10:34:31,863 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 10:34:31,875 - INFO -  * Restarting with stat
+2024-11-28 10:34:34,263 - INFO - Starting Flask server...
+2024-11-28 10:34:34,267 - INFO - Connected to database. Found tables: ['Item']
+2024-11-28 10:34:34,357 - WARNING -  * Debugger is active!
+2024-11-28 10:34:34,391 - INFO -  * Debugger PIN: 139-560-578
+2024-11-28 10:34:42,076 - INFO - 127.0.0.1 - - [28/Nov/2024 10:34:42] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-28 10:34:42,140 - INFO - 127.0.0.1 - - [28/Nov/2024 10:34:42] "GET /login HTTP/1.1" 200 -
+2024-11-28 10:34:55,845 - INFO - 127.0.0.1 - - [28/Nov/2024 10:34:55] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-11-28 10:34:55,855 - INFO - 127.0.0.1 - - [28/Nov/2024 10:34:55] "GET /login HTTP/1.1" 200 -
+2024-11-28 10:46:11,097 - INFO - Starting Flask server...
+2024-11-28 10:46:11,098 - INFO - Connected to database. Found tables: ['Item']
+2024-11-28 10:46:11,218 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 10:46:11,219 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 10:46:11,226 - INFO -  * Restarting with stat
+2024-11-28 10:46:13,631 - INFO - Starting Flask server...
+2024-11-28 10:46:13,635 - INFO - Connected to database. Found tables: ['Item']
+2024-11-28 10:46:13,750 - WARNING -  * Debugger is active!
+2024-11-28 10:46:13,803 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:32:04,786 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:32:04,822 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:32:05,329 - INFO -  * Restarting with stat
+2024-11-29 09:32:05,382 - INFO -  * Restarting with stat
+2024-11-29 09:32:07,745 - INFO - Starting Flask server...
+2024-11-29 09:32:07,747 - INFO - Connected to database. Found tables: ['Item']
+2024-11-29 09:32:07,755 - INFO - Connected to database. Found tables: ['Item']
+2024-11-29 09:32:07,843 - WARNING -  * Debugger is active!
+2024-11-29 09:32:07,843 - WARNING -  * Debugger is active!
+2024-11-29 09:32:07,871 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:32:07,871 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:43:13,938 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:43:14,091 - INFO -  * Restarting with stat
+2024-11-29 09:43:14,508 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:43:14,699 - INFO -  * Restarting with stat
+2024-11-29 09:43:16,855 - INFO - Starting Flask server...
+2024-11-29 09:43:16,859 - INFO - Connected to database. Found tables: ['Item']
+2024-11-29 09:43:16,984 - WARNING -  * Debugger is active!
+2024-11-29 09:43:17,056 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:43:17,318 - INFO - Starting Flask server...
+2024-11-29 09:43:17,320 - INFO - Connected to database. Found tables: ['Item']
+2024-11-29 09:43:17,394 - WARNING -  * Debugger is active!
+2024-11-29 09:43:17,430 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:55:43,827 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:55:43,880 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:55:44,024 - INFO -  * Restarting with stat
+2024-11-29 09:55:44,071 - INFO -  * Restarting with stat
+2024-11-29 09:55:46,369 - INFO - Starting Flask server...
+2024-11-29 09:55:46,370 - INFO - Starting Flask server...
+2024-11-29 09:55:46,371 - INFO - Connected to database. Found tables: ['Item', 'User', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites']
+2024-11-29 09:55:46,373 - INFO - Connected to database. Found tables: ['Item', 'User', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites']
+2024-11-29 09:55:46,453 - WARNING -  * Debugger is active!
+2024-11-29 09:55:46,453 - WARNING -  * Debugger is active!
+2024-11-29 09:55:46,483 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:57:07,450 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:57:07,485 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\database_project2\\generate_test_data.py', reloading
+2024-11-29 09:57:07,627 - INFO -  * Restarting with stat
+2024-11-29 09:57:07,675 - INFO -  * Restarting with stat
+2024-11-29 09:57:10,299 - INFO - Starting Flask server...
+2024-11-29 09:57:10,302 - INFO - Connected to database. Found tables: ['Item', 'User', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites']
+2024-11-29 09:57:10,365 - WARNING -  * Debugger is active!
+2024-11-29 09:57:10,374 - INFO - Starting Flask server...
+2024-11-29 09:57:10,377 - INFO - Connected to database. Found tables: ['Item', 'User', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites']
+2024-11-29 09:57:10,393 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 09:57:10,444 - WARNING -  * Debugger is active!
+2024-11-29 09:57:10,473 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 10:37:28,684 - INFO - Starting Flask server...
+2024-11-29 10:37:28,686 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:37:28,798 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 10:37:28,798 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 10:37:28,801 - INFO -  * Restarting with stat
+2024-11-29 10:37:31,222 - INFO - Starting Flask server...
+2024-11-29 10:37:31,225 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:37:31,274 - WARNING -  * Debugger is active!
+2024-11-29 10:37:31,324 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 10:37:34,743 - INFO - 127.0.0.1 - - [29/Nov/2024 10:37:34] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-29 10:37:34,830 - INFO - 127.0.0.1 - - [29/Nov/2024 10:37:34] "GET /login HTTP/1.1" 200 -
+2024-11-29 10:38:07,047 - DEBUG - Searching for user: User 1
+2024-11-29 10:38:07,050 - DEBUG - Database connection established
+2024-11-29 10:38:07,054 - DEBUG - Database connection closed
+2024-11-29 10:38:07,060 - INFO - 127.0.0.1 - - [29/Nov/2024 10:38:07] "POST /login HTTP/1.1" 200 -
+2024-11-29 10:38:33,708 - DEBUG - Searching for user: user1
+2024-11-29 10:38:33,713 - DEBUG - Database connection established
+2024-11-29 10:38:33,723 - DEBUG - Database connection closed
+2024-11-29 10:38:33,970 - INFO - 127.0.0.1 - - [29/Nov/2024 10:38:33] "POST /login HTTP/1.1" 200 -
+2024-11-29 10:38:52,817 - DEBUG - Searching for user: user1
+2024-11-29 10:38:52,818 - DEBUG - Database connection established
+2024-11-29 10:38:52,820 - DEBUG - Database connection closed
+2024-11-29 10:38:53,082 - INFO - 127.0.0.1 - - [29/Nov/2024 10:38:53] "POST /login HTTP/1.1" 200 -
+2024-11-29 10:52:10,500 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-29 10:52:10,534 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-29 10:52:10,756 - INFO -  * Restarting with stat
+2024-11-29 10:52:10,865 - INFO -  * Restarting with stat
+2024-11-29 10:52:13,453 - INFO - Starting Flask server...
+2024-11-29 10:52:13,453 - INFO - Starting Flask server...
+2024-11-29 10:52:13,456 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:52:13,551 - WARNING -  * Debugger is active!
+2024-11-29 10:52:13,551 - WARNING -  * Debugger is active!
+2024-11-29 10:52:13,578 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 10:52:22,647 - INFO - Starting Flask server...
+2024-11-29 10:52:22,648 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:52:22,776 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 10:52:22,776 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 10:52:22,783 - INFO -  * Restarting with stat
+2024-11-29 10:52:25,196 - INFO - Starting Flask server...
+2024-11-29 10:52:25,198 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:52:25,287 - WARNING -  * Debugger is active!
+2024-11-29 10:52:25,324 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 10:52:26,107 - INFO - 127.0.0.1 - - [29/Nov/2024 10:52:26] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-29 10:52:26,155 - INFO - 127.0.0.1 - - [29/Nov/2024 10:52:26] "GET /login HTTP/1.1" 200 -
+2024-11-29 10:52:36,647 - DEBUG - Searching for user: user1
+2024-11-29 10:52:36,649 - DEBUG - Database connection established
+2024-11-29 10:52:36,651 - DEBUG - Database connection closed
+2024-11-29 10:52:36,894 - INFO - 127.0.0.1 - - [29/Nov/2024 10:52:36] "POST /login HTTP/1.1" 200 -
+2024-11-29 10:52:41,839 - DEBUG - === Registration page opened ===
+2024-11-29 10:52:41,840 - DEBUG - GET request - showing registration form
+2024-11-29 10:52:41,849 - INFO - 127.0.0.1 - - [29/Nov/2024 10:52:41] "GET /register HTTP/1.1" 200 -
+2024-11-29 10:53:10,578 - DEBUG - === Registration page opened ===
+2024-11-29 10:53:10,578 - DEBUG - === Received POST request ===
+2024-11-29 10:53:10,579 - DEBUG - Form data: {'login': 'user1', 'password': '1234', 'full_name': 'user1', 'contacts': 'test@test.com'}
+2024-11-29 10:53:10,580 - DEBUG - Checking user: user1
+2024-11-29 10:53:10,580 - DEBUG - Searching for user: user1
+2024-11-29 10:53:10,581 - DEBUG - Database connection established
+2024-11-29 10:53:10,583 - DEBUG - Database connection closed
+2024-11-29 10:53:10,583 - WARNING - User user1 already exists
+2024-11-29 10:53:10,584 - INFO - 127.0.0.1 - - [29/Nov/2024 10:53:10] "POST /register HTTP/1.1" 200 -
+2024-11-29 10:53:40,955 - DEBUG - === Registration page opened ===
+2024-11-29 10:53:40,956 - DEBUG - === Received POST request ===
+2024-11-29 10:53:40,957 - DEBUG - Form data: {'login': 'user0', 'password': '1234', 'full_name': 'Test User', 'contacts': 'test@test.com'}
+2024-11-29 10:53:40,958 - DEBUG - Checking user: user0
+2024-11-29 10:53:40,958 - DEBUG - Searching for user: user0
+2024-11-29 10:53:40,960 - DEBUG - Database connection established
+2024-11-29 10:53:40,962 - DEBUG - Database connection closed
+2024-11-29 10:53:40,962 - DEBUG - Hashing password...
+2024-11-29 10:53:41,288 - DEBUG - Attempting to create user...
+2024-11-29 10:53:41,289 - DEBUG - Attempting to create user: user0
+2024-11-29 10:53:41,291 - DEBUG - Database connection established
+2024-11-29 10:53:41,293 - ERROR - Error creating user: table User has no column named ipn
+2024-11-29 10:53:41,294 - DEBUG - Database connection closed
+2024-11-29 10:53:41,295 - ERROR - Failed to create user
+2024-11-29 10:53:41,296 - INFO - 127.0.0.1 - - [29/Nov/2024 10:53:41] "POST /register HTTP/1.1" 200 -
+2024-11-29 10:56:03,399 - DEBUG - === Registration page opened ===
+2024-11-29 10:56:03,399 - DEBUG - === Received POST request ===
+2024-11-29 10:56:03,400 - DEBUG - Form data: {'login': 'user0', 'password': '1234', 'full_name': 'Test User0', 'contacts': 'test@test.com'}
+2024-11-29 10:56:03,400 - DEBUG - Checking user: user0
+2024-11-29 10:56:03,400 - DEBUG - Searching for user: user0
+2024-11-29 10:56:03,402 - DEBUG - Database connection established
+2024-11-29 10:56:03,403 - DEBUG - Database connection closed
+2024-11-29 10:56:03,403 - DEBUG - Hashing password...
+2024-11-29 10:56:03,649 - DEBUG - Attempting to create user...
+2024-11-29 10:56:03,650 - DEBUG - Attempting to create user: user0
+2024-11-29 10:56:03,652 - DEBUG - Database connection established
+2024-11-29 10:56:03,655 - ERROR - Error creating user: table User has no column named ipn
+2024-11-29 10:56:03,656 - DEBUG - Database connection closed
+2024-11-29 10:56:03,657 - ERROR - Failed to create user
+2024-11-29 10:56:03,659 - INFO - 127.0.0.1 - - [29/Nov/2024 10:56:03] "POST /register HTTP/1.1" 200 -
+2024-11-29 10:56:28,796 - DEBUG - === Registration page opened ===
+2024-11-29 10:56:28,796 - DEBUG - === Received POST request ===
+2024-11-29 10:56:28,797 - DEBUG - Form data: {'login': 'user0', 'password': '1234', 'full_name': 'TEst Test0', 'contacts': 'wrvfbbwrb'}
+2024-11-29 10:56:28,797 - DEBUG - Checking user: user0
+2024-11-29 10:56:28,797 - DEBUG - Searching for user: user0
+2024-11-29 10:56:28,798 - DEBUG - Database connection established
+2024-11-29 10:56:28,800 - DEBUG - Database connection closed
+2024-11-29 10:56:28,800 - DEBUG - Hashing password...
+2024-11-29 10:56:29,003 - DEBUG - Attempting to create user...
+2024-11-29 10:56:29,004 - DEBUG - Attempting to create user: user0
+2024-11-29 10:56:29,007 - DEBUG - Database connection established
+2024-11-29 10:56:29,010 - ERROR - Error creating user: table User has no column named ipn
+2024-11-29 10:56:29,011 - DEBUG - Database connection closed
+2024-11-29 10:56:29,011 - ERROR - Failed to create user
+2024-11-29 10:56:29,014 - INFO - 127.0.0.1 - - [29/Nov/2024 10:56:29] "POST /register HTTP/1.1" 200 -
+2024-11-29 10:58:47,594 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-29 10:58:47,768 - INFO -  * Restarting with stat
+2024-11-29 10:58:49,896 - INFO - Starting Flask server...
+2024-11-29 10:58:49,900 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:58:49,940 - INFO - Starting Flask server...
+2024-11-29 10:58:49,945 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:58:50,064 - WARNING -  * Debugger is active!
+2024-11-29 10:58:50,108 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 10:58:50,111 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 10:58:50,111 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 10:58:50,120 - INFO -  * Restarting with stat
+2024-11-29 10:58:52,346 - INFO - Starting Flask server...
+2024-11-29 10:58:52,349 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 10:58:52,402 - WARNING -  * Debugger is active!
+2024-11-29 10:58:52,441 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 10:58:57,618 - INFO - 127.0.0.1 - - [29/Nov/2024 10:58:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-29 10:58:57,662 - INFO - 127.0.0.1 - - [29/Nov/2024 10:58:57] "GET /login HTTP/1.1" 200 -
+2024-11-29 10:59:02,988 - DEBUG - === Registration page opened ===
+2024-11-29 10:59:02,988 - DEBUG - GET request - showing registration form
+2024-11-29 10:59:02,994 - INFO - 127.0.0.1 - - [29/Nov/2024 10:59:02] "GET /register HTTP/1.1" 200 -
+2024-11-29 10:59:20,721 - DEBUG - === Registration page opened ===
+2024-11-29 10:59:20,721 - DEBUG - === Received POST request ===
+2024-11-29 10:59:20,723 - DEBUG - Form data: {'login': 'user0', 'password': '1234', 'full_name': 'Test User0', 'contacts': 'adfban'}
+2024-11-29 10:59:20,724 - DEBUG - Checking user: user0
+2024-11-29 10:59:20,724 - DEBUG - Searching for user: user0
+2024-11-29 10:59:20,725 - DEBUG - Database connection established
+2024-11-29 10:59:20,726 - DEBUG - Database connection closed
+2024-11-29 10:59:20,726 - DEBUG - Hashing password...
+2024-11-29 10:59:20,895 - DEBUG - Attempting to create user...
+2024-11-29 10:59:20,895 - DEBUG - Attempting to create user: user0
+2024-11-29 10:59:20,896 - DEBUG - Database connection established
+2024-11-29 10:59:20,897 - ERROR - Error creating user: table User has no column named ipn
+2024-11-29 10:59:20,898 - DEBUG - Database connection closed
+2024-11-29 10:59:20,898 - ERROR - Failed to create user
+2024-11-29 10:59:20,899 - INFO - 127.0.0.1 - - [29/Nov/2024 10:59:20] "POST /register HTTP/1.1" 200 -
+2024-11-29 11:04:13,819 - INFO - 127.0.0.1 - - [29/Nov/2024 11:04:13] "GET /login HTTP/1.1" 200 -
+2024-11-29 11:04:21,108 - DEBUG - Searching for user: user1
+2024-11-29 11:04:21,111 - DEBUG - Database connection established
+2024-11-29 11:04:21,115 - DEBUG - Database connection closed
+2024-11-29 11:04:21,117 - INFO - 127.0.0.1 - - [29/Nov/2024 11:04:21] "POST /login HTTP/1.1" 200 -
+2024-11-29 11:12:36,327 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-29 11:12:36,569 - INFO -  * Restarting with stat
+2024-11-29 11:12:38,844 - INFO - Starting Flask server...
+2024-11-29 11:12:38,846 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 11:12:38,846 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 11:12:38,936 - WARNING -  * Debugger is active!
+2024-11-29 11:12:38,979 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 11:12:38,990 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 11:12:38,990 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 11:12:38,994 - INFO -  * Restarting with stat
+2024-11-29 11:12:41,285 - INFO - Starting Flask server...
+2024-11-29 11:12:41,287 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 11:12:41,339 - WARNING -  * Debugger is active!
+2024-11-29 11:12:41,365 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 11:12:41,753 - INFO - 127.0.0.1 - - [29/Nov/2024 11:12:41] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-29 11:12:41,799 - INFO - 127.0.0.1 - - [29/Nov/2024 11:12:41] "GET /login HTTP/1.1" 200 -
+2024-11-29 11:12:44,582 - DEBUG - === Registration page opened ===
+2024-11-29 11:12:44,582 - DEBUG - GET request - showing registration form
+2024-11-29 11:12:44,588 - INFO - 127.0.0.1 - - [29/Nov/2024 11:12:44] "GET /register HTTP/1.1" 200 -
+2024-11-29 11:13:05,445 - DEBUG - === Registration page opened ===
+2024-11-29 11:13:05,447 - DEBUG - === Received POST request ===
+2024-11-29 11:13:05,450 - DEBUG - Form data: {'login': 'user0', 'password': '1111', 'full_name': 'TEst Test0', 'contacts': 'adfban'}
+2024-11-29 11:13:05,450 - DEBUG - Checking user: user0
+2024-11-29 11:13:05,450 - DEBUG - Searching for user: user0
+2024-11-29 11:13:05,451 - DEBUG - Database connection established
+2024-11-29 11:13:05,453 - DEBUG - Database connection closed
+2024-11-29 11:13:05,453 - DEBUG - Hashing password...
+2024-11-29 11:13:05,763 - DEBUG - Attempting to create user...
+2024-11-29 11:13:05,765 - ERROR - Critical error during registration: create_user() got an unexpected keyword argument 'ipn'
+2024-11-29 11:13:05,767 - INFO - 127.0.0.1 - - [29/Nov/2024 11:13:05] "POST /register HTTP/1.1" 200 -
+2024-11-29 11:16:34,145 - INFO - Starting Flask server...
+2024-11-29 11:16:34,147 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 11:16:34,291 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 11:16:34,291 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 11:16:34,298 - INFO -  * Restarting with stat
+2024-11-29 11:16:36,673 - INFO - Starting Flask server...
+2024-11-29 11:16:36,676 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-29 11:16:36,758 - WARNING -  * Debugger is active!
+2024-11-29 11:16:36,779 - INFO -  * Debugger PIN: 139-560-578
+2024-11-29 11:16:41,140 - INFO - 127.0.0.1 - - [29/Nov/2024 11:16:41] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-29 11:16:41,186 - INFO - 127.0.0.1 - - [29/Nov/2024 11:16:41] "GET /login HTTP/1.1" 200 -
+2024-11-29 11:16:43,243 - DEBUG - === Registration page opened ===
+2024-11-29 11:16:43,244 - DEBUG - GET request - showing registration form
+2024-11-29 11:16:43,245 - INFO - 127.0.0.1 - - [29/Nov/2024 11:16:43] "GET /register HTTP/1.1" 200 -
+2024-11-29 11:17:06,084 - DEBUG - === Registration page opened ===
+2024-11-29 11:17:06,084 - DEBUG - === Received POST request ===
+2024-11-29 11:17:06,085 - DEBUG - Form data: {'login': 'user0', 'password': '111111', 'full_name': 'TEst Test0', 'contacts': 'wrvfbbwrb'}
+2024-11-29 11:17:06,085 - DEBUG - Checking user: user0
+2024-11-29 11:17:06,085 - DEBUG - Searching for user: user0
+2024-11-29 11:17:06,087 - DEBUG - Database connection established
+2024-11-29 11:17:06,088 - DEBUG - Database connection closed
+2024-11-29 11:17:06,088 - DEBUG - Hashing password...
+2024-11-29 11:17:06,395 - DEBUG - Attempting to create user...
+2024-11-29 11:17:06,396 - ERROR - Critical error during registration: create_user() got an unexpected keyword argument 'ipn'
+2024-11-29 11:17:06,398 - INFO - 127.0.0.1 - - [29/Nov/2024 11:17:06] "POST /register HTTP/1.1" 200 -
+2024-11-30 11:12:23,197 - INFO - 127.0.0.1 - - [30/Nov/2024 11:12:23] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-30 11:12:23,882 - INFO - 127.0.0.1 - - [30/Nov/2024 11:12:23] "GET /login HTTP/1.1" 200 -
+2024-11-30 11:12:34,916 - DEBUG - Searching for user: user0
+2024-11-30 11:12:34,961 - DEBUG - Database connection established
+2024-11-30 11:12:35,003 - DEBUG - Database connection closed
+2024-11-30 11:12:35,053 - INFO - 127.0.0.1 - - [30/Nov/2024 11:12:35] "POST /login HTTP/1.1" 200 -
+2024-11-30 11:12:39,773 - DEBUG - === Registration page opened ===
+2024-11-30 11:12:39,782 - DEBUG - GET request - showing registration form
+2024-11-30 11:12:39,787 - INFO - 127.0.0.1 - - [30/Nov/2024 11:12:39] "GET /register HTTP/1.1" 200 -
+2024-11-30 11:13:00,111 - DEBUG - === Registration page opened ===
+2024-11-30 11:13:00,113 - DEBUG - === Received POST request ===
+2024-11-30 11:13:00,119 - DEBUG - Form data: {'login': 'ggggg', 'password': '1111', 'full_name': 'gggggggg', 'contacts': 'afbadfb'}
+2024-11-30 11:13:00,121 - DEBUG - Checking user: ggggg
+2024-11-30 11:13:00,129 - DEBUG - Searching for user: ggggg
+2024-11-30 11:13:00,141 - DEBUG - Database connection established
+2024-11-30 11:13:00,148 - DEBUG - Database connection closed
+2024-11-30 11:13:00,151 - DEBUG - Hashing password...
+2024-11-30 11:13:00,680 - DEBUG - Attempting to create user...
+2024-11-30 11:13:00,687 - ERROR - Critical error during registration: create_user() got an unexpected keyword argument 'ipn'
+2024-11-30 11:13:00,702 - INFO - 127.0.0.1 - - [30/Nov/2024 11:13:00] "POST /register HTTP/1.1" 200 -
+2024-11-30 11:17:59,927 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-11-30 11:18:01,241 - INFO -  * Restarting with stat
+2024-11-30 11:18:07,288 - INFO - Starting Flask server...
+2024-11-30 11:18:07,293 - INFO - Starting Flask server...
+2024-11-30 11:18:07,309 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-30 11:18:07,323 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-30 11:18:07,591 - WARNING -  * Debugger is active!
+2024-11-30 11:18:07,650 - INFO -  * Debugger PIN: 139-560-578
+2024-11-30 11:18:07,686 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 11:18:07,687 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 11:18:07,699 - INFO -  * Restarting with stat
+2024-11-30 11:18:12,445 - INFO - Starting Flask server...
+2024-11-30 11:18:12,448 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-30 11:18:12,592 - WARNING -  * Debugger is active!
+2024-11-30 11:18:12,641 - INFO -  * Debugger PIN: 139-560-578
+2024-11-30 11:18:16,904 - INFO - 127.0.0.1 - - [30/Nov/2024 11:18:16] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-30 11:18:17,044 - INFO - 127.0.0.1 - - [30/Nov/2024 11:18:17] "GET /login HTTP/1.1" 200 -
+2024-11-30 11:18:21,454 - DEBUG - === Registration page opened ===
+2024-11-30 11:18:21,456 - DEBUG - GET request - showing registration form
+2024-11-30 11:18:21,474 - INFO - 127.0.0.1 - - [30/Nov/2024 11:18:21] "GET /register HTTP/1.1" 200 -
+2024-11-30 11:18:45,692 - DEBUG - === Registration page opened ===
+2024-11-30 11:18:45,709 - DEBUG - === Received POST request ===
+2024-11-30 11:18:45,729 - DEBUG - Form data: {'login': 'gggg', 'password': '1111', 'full_name': 'gggg gggg', 'contacts': 'wdfbwdfb'}
+2024-11-30 11:18:45,743 - DEBUG - Checking user: gggg
+2024-11-30 11:18:45,791 - DEBUG - Searching for user: gggg
+2024-11-30 11:18:45,843 - DEBUG - Database connection established
+2024-11-30 11:18:45,850 - DEBUG - Database connection closed
+2024-11-30 11:18:45,852 - DEBUG - Hashing password...
+2024-11-30 11:18:46,474 - DEBUG - Attempting to create user...
+2024-11-30 11:18:46,478 - DEBUG - Attempting to create user: gggg
+2024-11-30 11:18:46,483 - DEBUG - Database connection established
+2024-11-30 11:18:46,521 - INFO - User gggg created successfully
+2024-11-30 11:18:46,528 - DEBUG - Database connection closed
+2024-11-30 11:18:46,542 - INFO - Registration successful!
+2024-11-30 11:18:46,549 - INFO - 127.0.0.1 - - [30/Nov/2024 11:18:46] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-30 11:18:46,583 - INFO - 127.0.0.1 - - [30/Nov/2024 11:18:46] "GET /login HTTP/1.1" 200 -
+2024-11-30 11:19:03,809 - DEBUG - Searching for user: gggg
+2024-11-30 11:19:03,834 - DEBUG - Database connection established
+2024-11-30 11:19:03,837 - DEBUG - Database connection closed
+2024-11-30 11:19:04,384 - INFO - 127.0.0.1 - - [30/Nov/2024 11:19:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-30 11:19:04,528 - INFO - 127.0.0.1 - - [30/Nov/2024 11:19:04] "[35m[1mGET /items HTTP/1.1[0m" 500 -
+2024-11-30 11:19:06,048 - INFO - 127.0.0.1 - - [30/Nov/2024 11:19:06] "GET /items?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-11-30 11:19:06,511 - INFO - 127.0.0.1 - - [30/Nov/2024 11:19:06] "GET /items?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-11-30 11:19:07,983 - INFO - 127.0.0.1 - - [30/Nov/2024 11:19:07] "GET /items?__debugger__=yes&cmd=resource&f=console.png&s=1aYbOOZKeAomQOJKjUMn HTTP/1.1" 200 -
+2024-11-30 11:19:08,128 - INFO - 127.0.0.1 - - [30/Nov/2024 11:19:08] "GET /items?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-11-30 11:23:44,593 - INFO - Starting Flask server...
+2024-11-30 11:23:44,598 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-30 11:23:44,846 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 11:23:44,847 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 11:23:44,856 - INFO -  * Restarting with stat
+2024-11-30 11:23:48,798 - INFO - Starting Flask server...
+2024-11-30 11:23:48,801 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-11-30 11:23:48,918 - WARNING -  * Debugger is active!
+2024-11-30 11:23:48,964 - INFO -  * Debugger PIN: 139-560-578
+2024-11-30 11:23:56,163 - INFO - 127.0.0.1 - - [30/Nov/2024 11:23:56] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-30 11:23:56,230 - INFO - 127.0.0.1 - - [30/Nov/2024 11:23:56] "GET /login HTTP/1.1" 200 -
+2024-11-30 11:24:07,170 - DEBUG - Searching for user: gggg
+2024-11-30 11:24:07,184 - DEBUG - Database connection established
+2024-11-30 11:24:07,262 - DEBUG - Database connection closed
+2024-11-30 11:24:07,884 - INFO - 127.0.0.1 - - [30/Nov/2024 11:24:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-30 11:24:07,933 - INFO - 127.0.0.1 - - [30/Nov/2024 11:24:07] "GET /items HTTP/1.1" 200 -
+2024-11-30 11:24:31,576 - ERROR - Error fetching item: Object of type Item is not JSON serializable
+2024-11-30 11:24:31,577 - INFO - 127.0.0.1 - - [30/Nov/2024 11:24:31] "[35m[1mGET /items/1 HTTP/1.1[0m" 500 -
