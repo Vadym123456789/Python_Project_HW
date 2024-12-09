@@ -80,3 +80,5 @@ if __name__ == '__main__':
     else:
         print(f"Гіпотеза Коллатца не підтверджується для деяких чисел. "
               f"Перевірено {result_count:,} з {total_numbers:,}")
+
+        #hw is complited
