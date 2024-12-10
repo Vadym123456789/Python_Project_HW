@@ -689,3 +689,972 @@
 2024-12-08 13:23:50,977 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:50] "GET /items HTTP/1.1" 200 -
 2024-12-08 13:23:53,905 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:53] "GET /items/1 HTTP/1.1" 200 -
 2024-12-08 13:23:59,008 - INFO - 127.0.0.1 - - [08/Dec/2024 13:23:59] "GET /items/1 HTTP/1.1" 200 -
+2024-12-08 13:28:36,744 - INFO - Starting Flask server...
+2024-12-08 13:28:36,745 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:28:36,925 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 13:28:36,926 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 13:28:36,932 - INFO -  * Restarting with stat
+2024-12-08 13:28:38,918 - INFO - Starting Flask server...
+2024-12-08 13:28:38,920 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User']
+2024-12-08 13:28:38,990 - WARNING -  * Debugger is active!
+2024-12-08 13:28:39,023 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 13:28:46,900 - INFO - 127.0.0.1 - - [08/Dec/2024 13:28:46] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 13:28:46,971 - INFO - 127.0.0.1 - - [08/Dec/2024 13:28:46] "GET /login HTTP/1.1" 200 -
+2024-12-08 13:28:54,187 - DEBUG - Searching for user: Test3
+2024-12-08 13:28:54,375 - INFO - 127.0.0.1 - - [08/Dec/2024 13:28:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 13:28:54,393 - INFO - 127.0.0.1 - - [08/Dec/2024 13:28:54] "GET /items HTTP/1.1" 200 -
+2024-12-08 13:29:01,476 - INFO - 127.0.0.1 - - [08/Dec/2024 13:29:01] "GET /items/1 HTTP/1.1" 200 -
+2024-12-08 13:44:48,032 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\migrations\\env.py', reloading
+2024-12-08 13:44:48,171 - INFO -  * Restarting with stat
+2024-12-08 13:44:50,465 - INFO - Starting Flask server...
+2024-12-08 13:44:50,468 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User', 'alembic_version']
+2024-12-08 13:44:50,542 - WARNING -  * Debugger is active!
+2024-12-08 13:44:50,559 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 13:47:26,229 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\migrations\\env.py', reloading
+2024-12-08 13:47:26,333 - INFO -  * Restarting with stat
+2024-12-08 13:47:28,236 - INFO - Starting Flask server...
+2024-12-08 13:47:28,238 - INFO - Connected to database. Found tables: ['Item', 'sqlite_sequence', 'Contract', 'Feedback', 'Search_history', 'Favorites', 'User', 'alembic_version']
+2024-12-08 13:47:28,302 - WARNING -  * Debugger is active!
+2024-12-08 13:47:28,321 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:09:50,606 - INFO - Starting Flask server...
+2024-12-08 17:09:50,611 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:09:50,914 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 17:09:50,914 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 17:09:50,924 - INFO -  * Restarting with stat
+2024-12-08 17:09:53,047 - INFO - Starting Flask server...
+2024-12-08 17:09:53,048 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:09:53,110 - WARNING -  * Debugger is active!
+2024-12-08 17:09:53,122 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:09:56,819 - INFO - 127.0.0.1 - - [08/Dec/2024 17:09:56] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 17:09:56,861 - INFO - 127.0.0.1 - - [08/Dec/2024 17:09:56] "GET /login HTTP/1.1" 200 -
+2024-12-08 17:09:56,940 - INFO - 127.0.0.1 - - [08/Dec/2024 17:09:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-08 17:10:16,385 - DEBUG - Searching for user: Test3
+2024-12-08 17:10:16,399 - INFO - 127.0.0.1 - - [08/Dec/2024 17:10:16] "POST /login HTTP/1.1" 200 -
+2024-12-08 17:10:23,532 - DEBUG - Searching for user: Test3
+2024-12-08 17:10:23,534 - INFO - 127.0.0.1 - - [08/Dec/2024 17:10:23] "POST /login HTTP/1.1" 200 -
+2024-12-08 17:11:23,901 - DEBUG - === Registration page opened ===
+2024-12-08 17:11:23,901 - DEBUG - GET request - showing registration form
+2024-12-08 17:11:23,909 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:23] "GET /register HTTP/1.1" 200 -
+2024-12-08 17:11:34,503 - DEBUG - === Registration page opened ===
+2024-12-08 17:11:34,503 - DEBUG - === Received POST request ===
+2024-12-08 17:11:34,504 - DEBUG - Form data: {'login': 'Test3', 'password': 'Test3', 'full_name': 'Test3', 'contacts': '+30800000000'}
+2024-12-08 17:11:34,504 - DEBUG - Checking user: Test3
+2024-12-08 17:11:34,504 - DEBUG - Searching for user: Test3
+2024-12-08 17:11:34,507 - DEBUG - Hashing password...
+2024-12-08 17:11:34,708 - DEBUG - Attempting to create user...
+2024-12-08 17:11:34,709 - DEBUG - Attempting to create user: Test3
+2024-12-08 17:11:34,724 - INFO - User Test3 created successfully
+2024-12-08 17:11:34,724 - INFO - Registration successful!
+2024-12-08 17:11:34,726 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:34] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-08 17:11:34,735 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:34] "GET /login HTTP/1.1" 200 -
+2024-12-08 17:11:42,950 - DEBUG - Searching for user: Test3
+2024-12-08 17:11:43,172 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:43] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-08 17:11:43,552 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:43] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-08 17:11:43,559 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:43] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-08 17:11:43,634 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=J21xKOLzSjDY1EpEXTu3 HTTP/1.1" 200 -
+2024-12-08 17:11:43,674 - INFO - 127.0.0.1 - - [08/Dec/2024 17:11:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-08 17:15:32,877 - INFO - Starting Flask server...
+2024-12-08 17:15:32,878 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:15:32,965 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 17:15:32,966 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 17:15:32,970 - INFO -  * Restarting with stat
+2024-12-08 17:15:35,114 - INFO - Starting Flask server...
+2024-12-08 17:15:35,116 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:15:35,164 - WARNING -  * Debugger is active!
+2024-12-08 17:15:35,175 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:15:35,621 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:35] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 17:15:35,646 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:35] "GET /login HTTP/1.1" 200 -
+2024-12-08 17:15:43,040 - DEBUG - Searching for user: Test3
+2024-12-08 17:15:43,285 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:43] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-08 17:15:43,580 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:43] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-08 17:15:43,614 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:43] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-08 17:15:43,625 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=g6U1vUyqu9ojBoMHaxHQ HTTP/1.1" 200 -
+2024-12-08 17:15:43,672 - INFO - 127.0.0.1 - - [08/Dec/2024 17:15:43] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-08 17:16:29,045 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 17:16:29,296 - INFO -  * Restarting with stat
+2024-12-08 17:16:31,229 - INFO - Starting Flask server...
+2024-12-08 17:16:31,231 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:16:31,268 - WARNING -  * Debugger is active!
+2024-12-08 17:16:31,275 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:16:59,095 - INFO - Starting Flask server...
+2024-12-08 17:16:59,096 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:16:59,198 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 17:16:59,198 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 17:16:59,201 - INFO -  * Restarting with stat
+2024-12-08 17:17:00,768 - INFO - Starting Flask server...
+2024-12-08 17:17:00,771 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:17:00,850 - WARNING -  * Debugger is active!
+2024-12-08 17:17:00,864 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:17:04,605 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:04] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 17:17:04,636 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:04] "GET /login HTTP/1.1" 200 -
+2024-12-08 17:17:10,894 - DEBUG - Searching for user: Test3
+2024-12-08 17:17:11,084 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:11] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-08 17:17:11,394 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-08 17:17:11,434 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-08 17:17:11,491 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:11] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=IZSLVSTWrFoWSiEVeoZh HTTP/1.1" 200 -
+2024-12-08 17:17:11,522 - INFO - 127.0.0.1 - - [08/Dec/2024 17:17:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-08 17:19:07,462 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 17:19:07,598 - INFO -  * Restarting with stat
+2024-12-08 17:22:23,003 - INFO - Starting Flask server...
+2024-12-08 17:22:23,004 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:22:23,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 17:22:23,116 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 17:22:23,118 - INFO -  * Restarting with stat
+2024-12-08 17:22:25,136 - INFO - Starting Flask server...
+2024-12-08 17:22:25,139 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:22:25,208 - WARNING -  * Debugger is active!
+2024-12-08 17:22:25,217 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:22:28,783 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:28] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 17:22:28,825 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:28] "GET /login HTTP/1.1" 200 -
+2024-12-08 17:22:36,200 - DEBUG - Searching for user: Test3
+2024-12-08 17:22:36,426 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 17:22:36,441 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:36] "[35m[1mGET /items HTTP/1.1[0m" 500 -
+2024-12-08 17:22:36,773 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:36] "GET /items?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-08 17:22:36,814 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:36] "GET /items?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-08 17:22:36,868 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:36] "GET /items?__debugger__=yes&cmd=resource&f=console.png&s=FfVdyrfSJeLW798vMd4f HTTP/1.1" 200 -
+2024-12-08 17:22:36,900 - INFO - 127.0.0.1 - - [08/Dec/2024 17:22:36] "GET /items?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-08 17:24:07,632 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 17:24:07,777 - INFO -  * Restarting with stat
+2024-12-08 17:24:09,804 - INFO - Starting Flask server...
+2024-12-08 17:24:09,805 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:24:09,869 - WARNING -  * Debugger is active!
+2024-12-08 17:24:09,883 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:24:47,538 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 17:24:47,703 - INFO -  * Restarting with stat
+2024-12-08 17:24:49,519 - INFO - Starting Flask server...
+2024-12-08 17:24:49,520 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:24:49,558 - WARNING -  * Debugger is active!
+2024-12-08 17:24:49,565 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:25:41,126 - INFO - Starting Flask server...
+2024-12-08 17:25:41,128 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:25:41,259 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 17:25:41,260 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 17:25:41,265 - INFO -  * Restarting with stat
+2024-12-08 17:25:43,215 - INFO - Starting Flask server...
+2024-12-08 17:25:43,217 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 17:25:43,259 - WARNING -  * Debugger is active!
+2024-12-08 17:25:43,268 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 17:25:45,486 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:45] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 17:25:45,505 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:45] "GET /login HTTP/1.1" 200 -
+2024-12-08 17:25:53,713 - DEBUG - Searching for user: Test3
+2024-12-08 17:25:53,900 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:53] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-08 17:25:54,227 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:54] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-08 17:25:54,314 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:54] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-08 17:25:54,400 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:54] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=i103f3oI2vaH71dIR6d5 HTTP/1.1" 200 -
+2024-12-08 17:25:54,456 - INFO - 127.0.0.1 - - [08/Dec/2024 17:25:54] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-08 17:27:26,541 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 17:27:26,707 - INFO -  * Restarting with stat
+2024-12-08 18:33:51,889 - INFO - Starting Flask server...
+2024-12-08 18:33:51,890 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:33:52,040 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 18:33:52,040 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 18:33:52,047 - INFO -  * Restarting with stat
+2024-12-08 18:33:54,335 - INFO - Starting Flask server...
+2024-12-08 18:33:54,337 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:33:54,384 - WARNING -  * Debugger is active!
+2024-12-08 18:33:54,391 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:34:00,385 - INFO - 127.0.0.1 - - [08/Dec/2024 18:34:00] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 18:34:00,415 - INFO - 127.0.0.1 - - [08/Dec/2024 18:34:00] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:34:08,433 - DEBUG - Searching for user: Test3
+2024-12-08 18:34:08,703 - INFO - 127.0.0.1 - - [08/Dec/2024 18:34:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:34:08,732 - INFO - 127.0.0.1 - - [08/Dec/2024 18:34:08] "GET /items HTTP/1.1" 200 -
+2024-12-08 18:34:14,460 - INFO - 127.0.0.1 - - [08/Dec/2024 18:34:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-08 18:34:14,469 - INFO - 127.0.0.1 - - [08/Dec/2024 18:34:14] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:35:06,624 - DEBUG - Searching for user: Test3
+2024-12-08 18:35:06,822 - INFO - 127.0.0.1 - - [08/Dec/2024 18:35:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:35:06,828 - INFO - 127.0.0.1 - - [08/Dec/2024 18:35:06] "GET /items HTTP/1.1" 200 -
+2024-12-08 18:36:29,279 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 18:36:29,432 - INFO -  * Restarting with stat
+2024-12-08 18:36:31,231 - INFO - Starting Flask server...
+2024-12-08 18:36:31,233 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:36:31,291 - WARNING -  * Debugger is active!
+2024-12-08 18:36:31,300 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:37:51,561 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 18:37:51,701 - INFO -  * Restarting with stat
+2024-12-08 18:44:21,593 - INFO - Starting Flask server...
+2024-12-08 18:44:21,594 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:44:21,664 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 18:44:21,664 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 18:44:21,667 - INFO -  * Restarting with stat
+2024-12-08 18:44:23,595 - INFO - Starting Flask server...
+2024-12-08 18:44:23,596 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:44:23,636 - WARNING -  * Debugger is active!
+2024-12-08 18:44:23,642 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:44:24,377 - INFO - 127.0.0.1 - - [08/Dec/2024 18:44:24] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 18:44:24,407 - INFO - 127.0.0.1 - - [08/Dec/2024 18:44:24] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:44:41,912 - DEBUG - Searching for user: Test3
+2024-12-08 18:44:42,157 - INFO - 127.0.0.1 - - [08/Dec/2024 18:44:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:44:42,171 - INFO - 127.0.0.1 - - [08/Dec/2024 18:44:42] "GET /items HTTP/1.1" 200 -
+2024-12-08 18:45:20,051 - INFO - 127.0.0.1 - - [08/Dec/2024 18:45:20] "[32mPOST /add_item HTTP/1.1[0m" 302 -
+2024-12-08 18:45:20,061 - INFO - 127.0.0.1 - - [08/Dec/2024 18:45:20] "GET /items HTTP/1.1" 200 -
+2024-12-08 18:47:39,553 - INFO - Starting Flask server...
+2024-12-08 18:47:39,555 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:47:39,630 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 18:47:39,630 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 18:47:39,634 - INFO -  * Restarting with stat
+2024-12-08 18:47:41,327 - INFO - Starting Flask server...
+2024-12-08 18:47:41,328 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:47:41,367 - WARNING -  * Debugger is active!
+2024-12-08 18:47:41,373 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:47:46,023 - INFO - 127.0.0.1 - - [08/Dec/2024 18:47:46] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 18:47:46,047 - INFO - 127.0.0.1 - - [08/Dec/2024 18:47:46] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:47:58,354 - DEBUG - Searching for user: Test3
+2024-12-08 18:47:58,612 - INFO - 127.0.0.1 - - [08/Dec/2024 18:47:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:47:58,625 - INFO - 127.0.0.1 - - [08/Dec/2024 18:47:58] "GET /items HTTP/1.1" 200 -
+2024-12-08 18:49:09,477 - INFO - Starting Flask server...
+2024-12-08 18:49:09,478 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:49:09,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 18:49:09,565 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 18:49:09,570 - INFO -  * Restarting with stat
+2024-12-08 18:49:11,275 - INFO - Starting Flask server...
+2024-12-08 18:49:11,277 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:49:11,338 - WARNING -  * Debugger is active!
+2024-12-08 18:49:11,351 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:49:11,868 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:11] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 18:49:11,899 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:11] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:49:19,729 - DEBUG - Searching for user: Test3
+2024-12-08 18:49:19,947 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:49:19,967 - ERROR - Error in login_required decorator: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 18:49:19,968 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:19] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 18:49:19,973 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:19] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:49:25,932 - DEBUG - Searching for user: Test3
+2024-12-08 18:49:26,113 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:49:26,120 - ERROR - Error in login_required decorator: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 18:49:26,121 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:26] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 18:49:26,126 - INFO - 127.0.0.1 - - [08/Dec/2024 18:49:26] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:54:36,472 - INFO - Starting Flask server...
+2024-12-08 18:54:36,474 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:54:36,589 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 18:54:36,589 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 18:54:36,596 - INFO -  * Restarting with stat
+2024-12-08 18:54:38,423 - INFO - Starting Flask server...
+2024-12-08 18:54:38,424 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:54:38,462 - WARNING -  * Debugger is active!
+2024-12-08 18:54:38,469 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:54:46,852 - INFO - 127.0.0.1 - - [08/Dec/2024 18:54:46] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 18:54:46,882 - INFO - 127.0.0.1 - - [08/Dec/2024 18:54:46] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:55:16,747 - DEBUG - Searching for user: Test3
+2024-12-08 18:55:16,944 - INFO - 127.0.0.1 - - [08/Dec/2024 18:55:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 18:55:16,975 - ERROR - Error in login_required decorator: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 18:55:16,976 - INFO - 127.0.0.1 - - [08/Dec/2024 18:55:16] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 18:55:16,983 - INFO - 127.0.0.1 - - [08/Dec/2024 18:55:16] "GET /login HTTP/1.1" 200 -
+2024-12-08 18:56:34,220 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 18:56:34,494 - INFO -  * Restarting with stat
+2024-12-08 18:56:37,436 - INFO - Starting Flask server...
+2024-12-08 18:56:37,438 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:56:37,488 - WARNING -  * Debugger is active!
+2024-12-08 18:56:37,496 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 18:59:07,045 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 18:59:07,223 - INFO -  * Restarting with stat
+2024-12-08 18:59:09,363 - INFO - Starting Flask server...
+2024-12-08 18:59:09,366 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 18:59:09,473 - WARNING -  * Debugger is active!
+2024-12-08 18:59:09,491 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:06:07,593 - INFO - Starting Flask server...
+2024-12-08 19:06:07,595 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:06:07,673 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 19:06:07,673 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 19:06:07,676 - INFO -  * Restarting with stat
+2024-12-08 19:06:09,737 - INFO - Starting Flask server...
+2024-12-08 19:06:09,739 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:06:09,789 - WARNING -  * Debugger is active!
+2024-12-08 19:06:09,798 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:06:12,619 - INFO - 127.0.0.1 - - [08/Dec/2024 19:06:12] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 19:06:12,651 - INFO - 127.0.0.1 - - [08/Dec/2024 19:06:12] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:06:22,969 - DEBUG - Searching for user: Test3
+2024-12-08 19:06:23,134 - INFO - 127.0.0.1 - - [08/Dec/2024 19:06:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 19:06:23,163 - ERROR - Error displaying items: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 19:06:23,164 - INFO - 127.0.0.1 - - [08/Dec/2024 19:06:23] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 19:06:23,173 - INFO - 127.0.0.1 - - [08/Dec/2024 19:06:23] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:08:58,338 - INFO - Starting Flask server...
+2024-12-08 19:08:58,339 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:08:58,432 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 19:08:58,433 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 19:08:58,436 - INFO -  * Restarting with stat
+2024-12-08 19:09:00,170 - INFO - Starting Flask server...
+2024-12-08 19:09:00,172 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:09:00,217 - WARNING -  * Debugger is active!
+2024-12-08 19:09:00,224 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:09:02,435 - INFO - 127.0.0.1 - - [08/Dec/2024 19:09:02] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 19:09:02,458 - INFO - 127.0.0.1 - - [08/Dec/2024 19:09:02] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:09:11,114 - DEBUG - Searching for user: Test3
+2024-12-08 19:09:11,304 - INFO - 127.0.0.1 - - [08/Dec/2024 19:09:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 19:09:11,325 - ERROR - Error displaying items: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 19:09:11,326 - INFO - 127.0.0.1 - - [08/Dec/2024 19:09:11] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 19:09:11,332 - INFO - 127.0.0.1 - - [08/Dec/2024 19:09:11] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:19:41,890 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 19:19:42,110 - INFO -  * Restarting with stat
+2024-12-08 19:19:44,100 - INFO - Starting Flask server...
+2024-12-08 19:19:44,102 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:19:44,176 - WARNING -  * Debugger is active!
+2024-12-08 19:19:44,196 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:23:02,302 - INFO - Starting Flask server...
+2024-12-08 19:23:02,304 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:23:02,385 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 19:23:02,385 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 19:23:02,389 - INFO -  * Restarting with stat
+2024-12-08 19:23:03,666 - INFO - Starting Flask server...
+2024-12-08 19:23:03,667 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:23:03,705 - WARNING -  * Debugger is active!
+2024-12-08 19:23:03,711 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:23:05,877 - INFO - 127.0.0.1 - - [08/Dec/2024 19:23:05] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 19:23:05,899 - INFO - 127.0.0.1 - - [08/Dec/2024 19:23:05] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:23:12,345 - DEBUG - Searching for user: Test3
+2024-12-08 19:23:12,585 - INFO - 127.0.0.1 - - [08/Dec/2024 19:23:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 19:23:12,612 - ERROR - Error displaying items: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 19:23:12,614 - INFO - 127.0.0.1 - - [08/Dec/2024 19:23:12] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 19:23:12,624 - INFO - 127.0.0.1 - - [08/Dec/2024 19:23:12] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:29:35,958 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 19:29:36,103 - INFO -  * Restarting with stat
+2024-12-08 19:29:38,082 - INFO - Starting Flask server...
+2024-12-08 19:29:38,084 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:29:38,130 - WARNING -  * Debugger is active!
+2024-12-08 19:29:38,137 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:30:31,845 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-08 19:30:31,985 - INFO -  * Restarting with stat
+2024-12-08 19:30:34,237 - INFO - Starting Flask server...
+2024-12-08 19:30:34,238 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:30:34,327 - WARNING -  * Debugger is active!
+2024-12-08 19:30:34,344 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:31:26,737 - INFO - Starting Flask server...
+2024-12-08 19:31:26,739 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:31:26,845 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-08 19:31:26,845 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 19:31:26,849 - INFO -  * Restarting with stat
+2024-12-08 19:31:28,435 - INFO - Starting Flask server...
+2024-12-08 19:31:28,437 - INFO - Connected to database. Found tables: ['alembic_version', 'Item', 'User']
+2024-12-08 19:31:28,511 - WARNING -  * Debugger is active!
+2024-12-08 19:31:28,519 - INFO -  * Debugger PIN: 139-560-578
+2024-12-08 19:31:32,422 - INFO - 127.0.0.1 - - [08/Dec/2024 19:31:32] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-08 19:31:32,449 - INFO - 127.0.0.1 - - [08/Dec/2024 19:31:32] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:31:39,343 - DEBUG - Searching for user: Test3
+2024-12-08 19:31:39,495 - INFO - 127.0.0.1 - - [08/Dec/2024 19:31:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-08 19:31:39,520 - ERROR - Error displaying items: Could not build url for endpoint 'edit_item' with values ['item_id']. Did you mean 'get_item' instead?
+2024-12-08 19:31:39,522 - INFO - 127.0.0.1 - - [08/Dec/2024 19:31:39] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-08 19:31:39,531 - INFO - 127.0.0.1 - - [08/Dec/2024 19:31:39] "GET /login HTTP/1.1" 200 -
+2024-12-08 19:34:22,690 - INFO - Starting Flask server...
+2024-12-08 19:53:31,992 - INFO - Starting Flask server...
+2024-12-08 19:54:15,697 - INFO - Starting Flask server...
+2024-12-08 19:59:31,240 - INFO - Starting Flask server...
+2024-12-09 18:31:34,689 - INFO - Starting Flask server...
+2024-12-09 18:34:52,043 - INFO - Starting Flask server...
+2024-12-09 18:34:53,278 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 18:34:53,278 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 18:34:53,285 - INFO -  * Restarting with stat
+2024-12-09 18:34:56,511 - INFO - Starting Flask server...
+2024-12-09 18:34:56,847 - WARNING -  * Debugger is active!
+2024-12-09 18:34:56,890 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 18:35:58,296 - INFO - 127.0.0.1 - - [09/Dec/2024 18:35:58] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 18:35:58,341 - INFO - 127.0.0.1 - - [09/Dec/2024 18:35:58] "GET /login HTTP/1.1" 200 -
+2024-12-09 18:35:58,439 - INFO - 127.0.0.1 - - [09/Dec/2024 18:35:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-09 18:36:06,564 - DEBUG - Searching for user: Test3
+2024-12-09 18:36:06,811 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 18:36:06,835 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:06] "GET /items HTTP/1.1" 200 -
+2024-12-09 18:36:18,957 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:18] "GET /edit_item/1 HTTP/1.1" 200 -
+2024-12-09 18:36:21,514 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:21] "[32mPOST /edit_item/1 HTTP/1.1[0m" 302 -
+2024-12-09 18:36:21,523 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:21] "GET /items HTTP/1.1" 200 -
+2024-12-09 18:36:23,882 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:23] "[35m[1mGET /add_item HTTP/1.1[0m" 500 -
+2024-12-09 18:36:24,307 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:24] "GET /add_item?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-09 18:36:24,319 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:24] "GET /add_item?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-09 18:36:24,369 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:24] "GET /add_item?__debugger__=yes&cmd=resource&f=console.png&s=HF5DQAQH0s1aDtKqzpgT HTTP/1.1" 200 -
+2024-12-09 18:36:24,398 - INFO - 127.0.0.1 - - [09/Dec/2024 18:36:24] "GET /add_item?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-09 18:36:53,302 - INFO - 10.223.80.85 - - [09/Dec/2024 18:36:53] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 18:36:53,338 - INFO - 10.223.80.85 - - [09/Dec/2024 18:36:53] "GET /login HTTP/1.1" 200 -
+2024-12-09 18:36:53,732 - INFO - 10.223.80.85 - - [09/Dec/2024 18:36:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-09 18:37:00,909 - DEBUG - Searching for user: Test3
+2024-12-09 18:37:01,119 - INFO - 10.223.80.85 - - [09/Dec/2024 18:37:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 18:37:01,152 - INFO - 10.223.80.85 - - [09/Dec/2024 18:37:01] "GET /items HTTP/1.1" 200 -
+2024-12-09 18:42:20,913 - INFO - Starting Flask server...
+2024-12-09 18:42:22,114 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 18:42:22,114 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 18:42:22,120 - INFO -  * Restarting with stat
+2024-12-09 18:42:24,801 - INFO - Starting Flask server...
+2024-12-09 18:42:24,881 - WARNING -  * Debugger is active!
+2024-12-09 18:42:24,895 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 18:42:29,902 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:29] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 18:42:29,941 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:29] "GET /login HTTP/1.1" 200 -
+2024-12-09 18:42:33,490 - DEBUG - Searching for user: Test3
+2024-12-09 18:42:33,786 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 18:42:33,818 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:33] "GET /items HTTP/1.1" 200 -
+2024-12-09 18:42:37,860 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:37] "[35m[1mGET /add_item HTTP/1.1[0m" 500 -
+2024-12-09 18:42:38,320 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:38] "GET /add_item?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-09 18:42:38,333 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:38] "GET /add_item?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-09 18:42:38,442 - INFO - 10.223.80.85 - - [09/Dec/2024 18:42:38] "GET /add_item?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-09 18:46:54,326 - INFO - Starting Flask server...
+2024-12-09 18:46:55,613 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 18:46:55,613 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 18:46:55,615 - INFO -  * Restarting with stat
+2024-12-09 18:46:57,711 - INFO - Starting Flask server...
+2024-12-09 18:46:57,756 - WARNING -  * Debugger is active!
+2024-12-09 18:46:57,763 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 18:46:57,943 - INFO - 10.223.80.85 - - [09/Dec/2024 18:46:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 18:46:57,971 - INFO - 10.223.80.85 - - [09/Dec/2024 18:46:57] "GET /login HTTP/1.1" 200 -
+2024-12-09 18:47:01,885 - DEBUG - Searching for user: Test3
+2024-12-09 18:47:02,209 - INFO - 10.223.80.85 - - [09/Dec/2024 18:47:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 18:47:02,228 - INFO - 10.223.80.85 - - [09/Dec/2024 18:47:02] "GET /items HTTP/1.1" 200 -
+2024-12-09 18:47:04,824 - INFO - 10.223.80.85 - - [09/Dec/2024 18:47:04] "[35m[1mGET /add_item HTTP/1.1[0m" 500 -
+2024-12-09 18:47:05,255 - INFO - 10.223.80.85 - - [09/Dec/2024 18:47:05] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-09 18:47:05,287 - INFO - 10.223.80.85 - - [09/Dec/2024 18:47:05] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-09 18:59:57,938 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-09 18:59:58,151 - INFO -  * Restarting with stat
+2024-12-09 18:59:59,963 - INFO - Starting Flask server...
+2024-12-09 19:00:00,006 - WARNING -  * Debugger is active!
+2024-12-09 19:00:00,018 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:01:19,790 - INFO - Starting Flask server...
+2024-12-09 19:01:20,916 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:01:20,916 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:01:20,921 - INFO -  * Restarting with stat
+2024-12-09 19:01:23,019 - INFO - Starting Flask server...
+2024-12-09 19:01:23,107 - WARNING -  * Debugger is active!
+2024-12-09 19:01:23,120 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:01:23,279 - INFO - 127.0.0.1 - - [09/Dec/2024 19:01:23] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:01:23,309 - INFO - 127.0.0.1 - - [09/Dec/2024 19:01:23] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:01:36,143 - DEBUG - Searching for user: Test3
+2024-12-09 19:01:36,388 - INFO - 127.0.0.1 - - [09/Dec/2024 19:01:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:01:36,404 - INFO - 127.0.0.1 - - [09/Dec/2024 19:01:36] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:02:03,941 - INFO - 127.0.0.1 - - [09/Dec/2024 19:02:03] "[35m[1mGET /add_item HTTP/1.1[0m" 500 -
+2024-12-09 19:02:04,335 - INFO - 127.0.0.1 - - [09/Dec/2024 19:02:04] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-09 19:02:04,358 - INFO - 127.0.0.1 - - [09/Dec/2024 19:02:04] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-09 19:02:04,408 - INFO - 127.0.0.1 - - [09/Dec/2024 19:02:04] "GET /add_item?__debugger__=yes&cmd=resource&f=console.png&s=VwbdJxEemFQXIlgMQJVk HTTP/1.1" 200 -
+2024-12-09 19:07:35,395 - INFO - Starting Flask server...
+2024-12-09 19:07:36,430 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:07:36,430 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:07:36,434 - INFO -  * Restarting with stat
+2024-12-09 19:07:38,330 - INFO - Starting Flask server...
+2024-12-09 19:07:38,384 - WARNING -  * Debugger is active!
+2024-12-09 19:07:38,389 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:07:38,992 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:38] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:07:39,010 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:39] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:07:45,112 - DEBUG - Searching for user: Test3
+2024-12-09 19:07:45,307 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:07:45,322 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:45] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:07:48,232 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:48] "[35m[1mGET /add_item HTTP/1.1[0m" 500 -
+2024-12-09 19:07:48,791 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:48] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-09 19:07:48,839 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:48] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-09 19:07:48,918 - INFO - 127.0.0.1 - - [09/Dec/2024 19:07:48] "GET /add_item?__debugger__=yes&cmd=resource&f=console.png&s=OgowPfCyodgwXssEv8qs HTTP/1.1" 200 -
+2024-12-09 19:10:48,602 - INFO - Starting Flask server...
+2024-12-09 19:10:49,768 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:10:49,769 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:10:49,773 - INFO -  * Restarting with stat
+2024-12-09 19:10:52,073 - INFO - Starting Flask server...
+2024-12-09 19:10:52,121 - WARNING -  * Debugger is active!
+2024-12-09 19:10:52,128 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:10:52,188 - INFO - 127.0.0.1 - - [09/Dec/2024 19:10:52] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:10:52,200 - INFO - 127.0.0.1 - - [09/Dec/2024 19:10:52] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:10:57,349 - DEBUG - Searching for user: Test3
+2024-12-09 19:10:57,640 - INFO - 127.0.0.1 - - [09/Dec/2024 19:10:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:10:57,652 - INFO - 127.0.0.1 - - [09/Dec/2024 19:10:57] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:11:00,313 - INFO - 127.0.0.1 - - [09/Dec/2024 19:11:00] "GET /add_item HTTP/1.1" 200 -
+2024-12-09 19:11:19,954 - DEBUG - Database connection established
+2024-12-09 19:11:19,970 - DEBUG - Database connection closed
+2024-12-09 19:11:19,971 - INFO - 127.0.0.1 - - [09/Dec/2024 19:11:19] "[32mPOST /add_item HTTP/1.1[0m" 302 -
+2024-12-09 19:11:19,982 - INFO - 127.0.0.1 - - [09/Dec/2024 19:11:19] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:12:52,378 - DEBUG - Searching for user: Test3
+2024-12-09 19:12:52,400 - INFO - 127.0.0.1 - - [09/Dec/2024 19:12:52] "[35m[1mGET /profile HTTP/1.1[0m" 500 -
+2024-12-09 19:12:52,769 - INFO - 127.0.0.1 - - [09/Dec/2024 19:12:52] "GET /profile?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-09 19:12:52,808 - INFO - 127.0.0.1 - - [09/Dec/2024 19:12:52] "GET /profile?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-09 19:12:52,868 - INFO - 127.0.0.1 - - [09/Dec/2024 19:12:52] "GET /profile?__debugger__=yes&cmd=resource&f=console.png&s=LzwfCWCIWVQrB76e4Mlz HTTP/1.1" 200 -
+2024-12-09 19:12:52,895 - INFO - 127.0.0.1 - - [09/Dec/2024 19:12:52] "GET /profile?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-09 19:15:21,174 - INFO - Starting Flask server...
+2024-12-09 19:15:22,315 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:15:22,315 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:15:22,319 - INFO -  * Restarting with stat
+2024-12-09 19:15:24,406 - INFO - Starting Flask server...
+2024-12-09 19:15:24,472 - WARNING -  * Debugger is active!
+2024-12-09 19:15:24,487 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:15:24,572 - INFO - 127.0.0.1 - - [09/Dec/2024 19:15:24] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:15:24,588 - INFO - 127.0.0.1 - - [09/Dec/2024 19:15:24] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:15:30,884 - DEBUG - Searching for user: Test3
+2024-12-09 19:15:31,038 - INFO - 127.0.0.1 - - [09/Dec/2024 19:15:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:15:31,057 - INFO - 127.0.0.1 - - [09/Dec/2024 19:15:31] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:15:52,766 - DEBUG - Searching for user: Test3
+2024-12-09 19:15:52,775 - INFO - 127.0.0.1 - - [09/Dec/2024 19:15:52] "GET /profile HTTP/1.1" 200 -
+2024-12-09 19:15:59,628 - INFO - 127.0.0.1 - - [09/Dec/2024 19:15:59] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:16:14,095 - INFO - 127.0.0.1 - - [09/Dec/2024 19:16:14] "[33mGET /edit_item/<int:item_id> HTTP/1.1[0m" 404 -
+2024-12-09 19:16:26,128 - INFO - 127.0.0.1 - - [09/Dec/2024 19:16:26] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:16:36,603 - DEBUG - === Registration page opened ===
+2024-12-09 19:16:36,603 - DEBUG - GET request - showing registration form
+2024-12-09 19:16:36,610 - INFO - 127.0.0.1 - - [09/Dec/2024 19:16:36] "GET /register HTTP/1.1" 200 -
+2024-12-09 19:18:44,988 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-09 19:18:45,160 - INFO -  * Restarting with stat
+2024-12-09 19:18:47,231 - INFO - Starting Flask server...
+2024-12-09 19:18:47,310 - WARNING -  * Debugger is active!
+2024-12-09 19:18:47,318 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:21:54,468 - INFO - Starting Flask server...
+2024-12-09 19:21:55,738 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:21:55,739 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:21:55,744 - INFO -  * Restarting with stat
+2024-12-09 19:21:57,359 - INFO - Starting Flask server...
+2024-12-09 19:21:57,415 - WARNING -  * Debugger is active!
+2024-12-09 19:21:57,422 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:21:57,611 - INFO - 127.0.0.1 - - [09/Dec/2024 19:21:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:21:57,635 - INFO - 127.0.0.1 - - [09/Dec/2024 19:21:57] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:22:11,142 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:11] "[33mGET /edit_item/<int:item_id> HTTP/1.1[0m" 404 -
+2024-12-09 19:22:20,195 - DEBUG - Searching for user: Test3
+2024-12-09 19:22:20,539 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:22:20,555 - ERROR - Error displaying items: 'dict object' has no attribute 'item_id'
+2024-12-09 19:22:20,556 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:20] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-09 19:22:20,562 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:20] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:22:28,762 - DEBUG - Searching for user: Test3
+2024-12-09 19:22:29,006 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:22:29,016 - ERROR - Error displaying items: 'dict object' has no attribute 'item_id'
+2024-12-09 19:22:29,017 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:29] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-09 19:22:29,024 - INFO - 127.0.0.1 - - [09/Dec/2024 19:22:29] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:24:38,987 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-09 19:24:39,238 - INFO -  * Restarting with stat
+2024-12-09 19:32:38,949 - INFO - Starting Flask server...
+2024-12-09 19:32:40,053 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:32:40,053 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:32:40,060 - INFO -  * Restarting with stat
+2024-12-09 19:32:42,614 - INFO - Starting Flask server...
+2024-12-09 19:32:42,703 - WARNING -  * Debugger is active!
+2024-12-09 19:32:42,717 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:32:42,865 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:42] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:32:42,897 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:42] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:32:48,036 - DEBUG - Searching for user: Test3
+2024-12-09 19:32:48,275 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:48] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-09 19:32:48,692 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:48] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-09 19:32:48,696 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:48] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-09 19:32:48,797 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:48] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=YzzztmNZ8OBAWXqGqBLG HTTP/1.1" 200 -
+2024-12-09 19:32:48,832 - INFO - 127.0.0.1 - - [09/Dec/2024 19:32:48] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-09 19:36:27,331 - INFO - Starting Flask server...
+2024-12-09 19:36:28,433 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:36:28,434 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:36:28,438 - INFO -  * Restarting with stat
+2024-12-09 19:36:30,710 - INFO - Starting Flask server...
+2024-12-09 19:36:30,847 - WARNING -  * Debugger is active!
+2024-12-09 19:36:30,855 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:36:30,967 - INFO - 127.0.0.1 - - [09/Dec/2024 19:36:30] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:36:30,985 - INFO - 127.0.0.1 - - [09/Dec/2024 19:36:30] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:36:37,431 - DEBUG - Searching for user: Test3
+2024-12-09 19:36:37,685 - INFO - 127.0.0.1 - - [09/Dec/2024 19:36:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:36:37,701 - ERROR - Error displaying items: 'dict object' has no attribute 'item_id'
+2024-12-09 19:36:37,702 - INFO - 127.0.0.1 - - [09/Dec/2024 19:36:37] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-09 19:36:37,708 - INFO - 127.0.0.1 - - [09/Dec/2024 19:36:37] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:50:35,392 - INFO - Starting Flask server...
+2024-12-09 19:50:36,598 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:50:36,598 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:50:36,601 - INFO -  * Restarting with stat
+2024-12-09 19:50:38,478 - INFO - Starting Flask server...
+2024-12-09 19:50:38,522 - WARNING -  * Debugger is active!
+2024-12-09 19:50:38,535 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:50:40,602 - INFO - 127.0.0.1 - - [09/Dec/2024 19:50:40] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:50:40,631 - INFO - 127.0.0.1 - - [09/Dec/2024 19:50:40] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:50:47,073 - DEBUG - Searching for user: Test3
+2024-12-09 19:50:47,389 - INFO - 127.0.0.1 - - [09/Dec/2024 19:50:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:50:47,421 - ERROR - Error displaying items: 'dict object' has no attribute 'item_id'
+2024-12-09 19:50:47,422 - INFO - 127.0.0.1 - - [09/Dec/2024 19:50:47] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-09 19:50:47,434 - INFO - 127.0.0.1 - - [09/Dec/2024 19:50:47] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:55:34,650 - INFO - Starting Flask server...
+2024-12-09 19:55:35,704 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:55:35,704 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:55:35,708 - INFO -  * Restarting with stat
+2024-12-09 19:55:37,816 - INFO - Starting Flask server...
+2024-12-09 19:55:37,883 - WARNING -  * Debugger is active!
+2024-12-09 19:55:37,895 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:55:38,008 - INFO - 127.0.0.1 - - [09/Dec/2024 19:55:38] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:55:38,033 - INFO - 127.0.0.1 - - [09/Dec/2024 19:55:38] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:55:54,965 - DEBUG - Searching for user: Test3
+2024-12-09 19:55:55,127 - INFO - 127.0.0.1 - - [09/Dec/2024 19:55:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:55:55,140 - ERROR - Error displaying items: 'models.Item object' has no attribute 'item_id'
+2024-12-09 19:55:55,140 - INFO - 127.0.0.1 - - [09/Dec/2024 19:55:55] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-09 19:55:55,146 - INFO - 127.0.0.1 - - [09/Dec/2024 19:55:55] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:57:51,760 - INFO - Starting Flask server...
+2024-12-09 19:57:52,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 19:57:52,807 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 19:57:52,811 - INFO -  * Restarting with stat
+2024-12-09 19:57:55,084 - INFO - Starting Flask server...
+2024-12-09 19:57:55,139 - WARNING -  * Debugger is active!
+2024-12-09 19:57:55,145 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 19:57:55,217 - INFO - 127.0.0.1 - - [09/Dec/2024 19:57:55] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 19:57:55,230 - INFO - 127.0.0.1 - - [09/Dec/2024 19:57:55] "GET /login HTTP/1.1" 200 -
+2024-12-09 19:58:08,680 - DEBUG - Searching for user: Test3
+2024-12-09 19:58:08,885 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 19:58:08,902 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:08] "GET /items HTTP/1.1" 200 -
+2024-12-09 19:58:12,248 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:12] "[35m[1mGET /add_item HTTP/1.1[0m" 500 -
+2024-12-09 19:58:12,784 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:12] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-09 19:58:12,796 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:12] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-09 19:58:12,918 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:12] "GET /add_item?__debugger__=yes&cmd=resource&f=console.png&s=M635v74n9NnLdvMYav0e HTTP/1.1" 200 -
+2024-12-09 19:58:12,959 - INFO - 127.0.0.1 - - [09/Dec/2024 19:58:12] "[36mGET /add_item?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-09 20:00:14,591 - INFO - Starting Flask server...
+2024-12-09 20:00:15,665 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.85:5000
+2024-12-09 20:00:15,666 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 20:00:15,668 - INFO -  * Restarting with stat
+2024-12-09 20:00:17,807 - INFO - Starting Flask server...
+2024-12-09 20:00:17,862 - WARNING -  * Debugger is active!
+2024-12-09 20:00:17,870 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 20:00:17,940 - INFO - 127.0.0.1 - - [09/Dec/2024 20:00:17] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-09 20:00:17,955 - INFO - 127.0.0.1 - - [09/Dec/2024 20:00:17] "GET /login HTTP/1.1" 200 -
+2024-12-09 20:00:23,264 - DEBUG - Searching for user: Test3
+2024-12-09 20:00:23,530 - INFO - 127.0.0.1 - - [09/Dec/2024 20:00:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-09 20:00:23,558 - INFO - 127.0.0.1 - - [09/Dec/2024 20:00:23] "GET /items HTTP/1.1" 200 -
+2024-12-09 20:00:27,381 - INFO - 127.0.0.1 - - [09/Dec/2024 20:00:27] "GET /add_item HTTP/1.1" 200 -
+2024-12-09 20:08:39,620 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\HW 8 collatz.py', reloading
+2024-12-09 20:08:39,777 - INFO -  * Restarting with stat
+2024-12-09 20:08:41,818 - INFO - Starting Flask server...
+2024-12-09 20:08:41,865 - WARNING -  * Debugger is active!
+2024-12-09 20:08:41,880 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 20:09:44,156 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\HW 8 collatz.py', reloading
+2024-12-09 20:09:44,307 - INFO -  * Restarting with stat
+2024-12-09 20:09:46,248 - INFO - Starting Flask server...
+2024-12-09 20:09:46,285 - WARNING -  * Debugger is active!
+2024-12-09 20:09:46,290 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 22:47:13,706 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\HW 8 collatz.py', reloading
+2024-12-09 22:47:14,037 - INFO -  * Restarting with stat
+2024-12-09 22:47:17,221 - INFO - Starting Flask server...
+2024-12-09 22:47:17,316 - WARNING -  * Debugger is active!
+2024-12-09 22:47:17,328 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 22:48:04,700 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\HW 8 collatz.py', reloading
+2024-12-09 22:48:04,858 - INFO -  * Restarting with stat
+2024-12-09 22:48:08,890 - INFO - Starting Flask server...
+2024-12-09 22:48:09,152 - WARNING -  * Debugger is active!
+2024-12-09 22:48:09,160 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 22:49:59,220 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\HW 8 collatz.py', reloading
+2024-12-09 22:49:59,481 - INFO -  * Restarting with stat
+2024-12-09 22:50:03,862 - INFO - Starting Flask server...
+2024-12-09 22:50:03,938 - WARNING -  * Debugger is active!
+2024-12-09 22:50:03,946 - INFO -  * Debugger PIN: 139-560-578
+2024-12-09 22:53:01,805 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\HW 8 collatz.py', reloading
+2024-12-09 22:53:02,213 - INFO -  * Restarting with stat
+2024-12-09 22:53:08,329 - INFO - Starting Flask server...
+2024-12-09 22:53:08,669 - WARNING -  * Debugger is active!
+2024-12-09 22:53:08,676 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:18:26,109 - INFO - Starting Flask server...
+2024-12-10 19:18:27,242 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:18:27,244 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:18:27,250 - INFO -  * Restarting with stat
+2024-12-10 19:18:29,630 - INFO - Starting Flask server...
+2024-12-10 19:18:29,721 - WARNING -  * Debugger is active!
+2024-12-10 19:18:29,738 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:18:32,847 - INFO - 127.0.0.1 - - [10/Dec/2024 19:18:32] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:18:32,871 - INFO - 127.0.0.1 - - [10/Dec/2024 19:18:32] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:18:32,962 - INFO - 127.0.0.1 - - [10/Dec/2024 19:18:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-10 19:18:40,521 - DEBUG - Searching for user: Test3
+2024-12-10 19:18:40,708 - INFO - 127.0.0.1 - - [10/Dec/2024 19:18:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:18:40,723 - INFO - 127.0.0.1 - - [10/Dec/2024 19:18:40] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:23:02,079 - INFO - Starting Flask server...
+2024-12-10 19:23:03,208 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:23:03,208 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:23:03,213 - INFO -  * Restarting with stat
+2024-12-10 19:23:05,312 - INFO - Starting Flask server...
+2024-12-10 19:23:05,360 - WARNING -  * Debugger is active!
+2024-12-10 19:23:05,377 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:23:05,619 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:05] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:23:05,647 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:05] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:23:23,187 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:23] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-10 19:23:23,198 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:23] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:23:30,729 - DEBUG - Searching for user: Test3
+2024-12-10 19:23:31,021 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:23:31,036 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:31] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:23:44,619 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:44] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:23:47,086 - INFO - 127.0.0.1 - - [10/Dec/2024 19:23:47] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:27:03,946 - INFO - Starting Flask server...
+2024-12-10 19:27:04,988 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:27:04,988 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:27:04,992 - INFO -  * Restarting with stat
+2024-12-10 19:27:06,827 - INFO - Starting Flask server...
+2024-12-10 19:27:06,873 - WARNING -  * Debugger is active!
+2024-12-10 19:27:06,886 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:27:51,307 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-10 19:27:51,413 - INFO -  * Restarting with stat
+2024-12-10 19:27:53,548 - INFO - Starting Flask server...
+2024-12-10 19:27:53,598 - WARNING -  * Debugger is active!
+2024-12-10 19:27:53,607 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:28:07,392 - INFO - Starting Flask server...
+2024-12-10 19:28:08,470 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:28:08,470 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:28:08,475 - INFO -  * Restarting with stat
+2024-12-10 19:28:10,529 - INFO - Starting Flask server...
+2024-12-10 19:28:10,608 - WARNING -  * Debugger is active!
+2024-12-10 19:28:10,623 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:28:11,645 - INFO - 10.223.80.21 - - [10/Dec/2024 19:28:11] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:28:11,673 - INFO - 10.223.80.21 - - [10/Dec/2024 19:28:11] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:28:11,783 - INFO - 10.223.80.21 - - [10/Dec/2024 19:28:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-10 19:28:18,879 - DEBUG - Searching for user: Test3
+2024-12-10 19:28:19,071 - INFO - 10.223.80.21 - - [10/Dec/2024 19:28:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:28:19,084 - INFO - 10.223.80.21 - - [10/Dec/2024 19:28:19] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:29:13,555 - ERROR - Error fetching contracts: 'Session' object is not subscriptable
+2024-12-10 19:29:13,556 - INFO - 10.223.80.21 - - [10/Dec/2024 19:29:13] "[32mGET /contracts HTTP/1.1[0m" 302 -
+2024-12-10 19:29:13,567 - INFO - 10.223.80.21 - - [10/Dec/2024 19:29:13] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:29:23,580 - ERROR - Error fetching contracts: 'Session' object is not subscriptable
+2024-12-10 19:29:23,581 - INFO - 10.223.80.21 - - [10/Dec/2024 19:29:23] "[32mGET /contracts HTTP/1.1[0m" 302 -
+2024-12-10 19:29:23,590 - INFO - 10.223.80.21 - - [10/Dec/2024 19:29:23] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:31:27,048 - INFO - Starting Flask server...
+2024-12-10 19:31:28,339 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:31:28,340 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:31:28,344 - INFO -  * Restarting with stat
+2024-12-10 19:31:30,438 - INFO - Starting Flask server...
+2024-12-10 19:31:30,528 - WARNING -  * Debugger is active!
+2024-12-10 19:31:30,534 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:31:30,615 - INFO - 127.0.0.1 - - [10/Dec/2024 19:31:30] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:31:30,643 - INFO - 127.0.0.1 - - [10/Dec/2024 19:31:30] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:31:48,347 - DEBUG - Searching for user: Test3
+2024-12-10 19:31:48,550 - INFO - 127.0.0.1 - - [10/Dec/2024 19:31:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:31:48,567 - INFO - 127.0.0.1 - - [10/Dec/2024 19:31:48] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:31:57,122 - INFO - 127.0.0.1 - - [10/Dec/2024 19:31:57] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:33:15,626 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:15] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:33:28,637 - ERROR - Error creating contract: 'Session' object is not subscriptable
+2024-12-10 19:33:28,639 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:28] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:33:28,648 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:28] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:33:30,622 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:30] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:33:37,032 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:37] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:33:41,983 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:41] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:33:59,925 - ERROR - Error creating contract: 'Session' object is not subscriptable
+2024-12-10 19:33:59,926 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:59] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:33:59,936 - INFO - 127.0.0.1 - - [10/Dec/2024 19:33:59] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:34:02,435 - INFO - 127.0.0.1 - - [10/Dec/2024 19:34:02] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:36:03,138 - INFO - Starting Flask server...
+2024-12-10 19:36:04,200 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:36:04,200 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:36:04,203 - INFO -  * Restarting with stat
+2024-12-10 19:36:06,298 - INFO - Starting Flask server...
+2024-12-10 19:36:06,353 - WARNING -  * Debugger is active!
+2024-12-10 19:36:06,364 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:36:06,431 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:36:06,445 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:06] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:36:13,191 - DEBUG - Searching for user: Test3
+2024-12-10 19:36:13,391 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:36:13,413 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:13] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:36:15,753 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:15] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:36:29,049 - ERROR - Error creating contract: Session.get() missing 1 required positional argument: 'ident'
+2024-12-10 19:36:29,050 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:29] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:36:29,059 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:29] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:36:31,908 - INFO - 127.0.0.1 - - [10/Dec/2024 19:36:31] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:38:35,096 - INFO - Starting Flask server...
+2024-12-10 19:38:36,143 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:38:36,143 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:38:36,147 - INFO -  * Restarting with stat
+2024-12-10 19:38:38,114 - INFO - Starting Flask server...
+2024-12-10 19:38:38,163 - WARNING -  * Debugger is active!
+2024-12-10 19:38:38,173 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:38:43,096 - INFO - 127.0.0.1 - - [10/Dec/2024 19:38:43] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:38:43,119 - INFO - 127.0.0.1 - - [10/Dec/2024 19:38:43] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:38:51,465 - DEBUG - Searching for user: Test3
+2024-12-10 19:38:51,675 - INFO - 127.0.0.1 - - [10/Dec/2024 19:38:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:38:51,692 - INFO - 127.0.0.1 - - [10/Dec/2024 19:38:51] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:39:11,685 - INFO - 127.0.0.1 - - [10/Dec/2024 19:39:11] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:39:24,795 - ERROR - Error creating contract: Session.get() missing 1 required positional argument: 'ident'
+2024-12-10 19:39:24,796 - INFO - 127.0.0.1 - - [10/Dec/2024 19:39:24] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:39:24,807 - INFO - 127.0.0.1 - - [10/Dec/2024 19:39:24] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:39:27,396 - INFO - 127.0.0.1 - - [10/Dec/2024 19:39:27] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:41:45,960 - INFO - Starting Flask server...
+2024-12-10 19:41:47,056 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:41:47,057 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:41:47,061 - INFO -  * Restarting with stat
+2024-12-10 19:41:48,865 - INFO - Starting Flask server...
+2024-12-10 19:41:48,907 - WARNING -  * Debugger is active!
+2024-12-10 19:41:48,916 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:41:49,295 - INFO - 127.0.0.1 - - [10/Dec/2024 19:41:49] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:41:49,317 - INFO - 127.0.0.1 - - [10/Dec/2024 19:41:49] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:41:54,750 - DEBUG - Searching for user: Test3
+2024-12-10 19:41:54,944 - INFO - 127.0.0.1 - - [10/Dec/2024 19:41:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:41:54,958 - INFO - 127.0.0.1 - - [10/Dec/2024 19:41:54] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:41:57,913 - INFO - 127.0.0.1 - - [10/Dec/2024 19:41:57] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:42:05,590 - ERROR - Error creating contract: Session.get() missing 1 required positional argument: 'ident'
+2024-12-10 19:42:05,591 - INFO - 127.0.0.1 - - [10/Dec/2024 19:42:05] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:42:05,601 - INFO - 127.0.0.1 - - [10/Dec/2024 19:42:05] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:42:07,870 - INFO - 127.0.0.1 - - [10/Dec/2024 19:42:07] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:44:58,070 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-10 19:44:58,247 - INFO -  * Restarting with stat
+2024-12-10 19:45:00,168 - INFO - Starting Flask server...
+2024-12-10 19:45:00,245 - WARNING -  * Debugger is active!
+2024-12-10 19:45:00,262 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:47:04,883 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-10 19:47:05,107 - INFO -  * Restarting with stat
+2024-12-10 19:51:26,493 - INFO - Starting Flask server...
+2024-12-10 19:51:27,621 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:51:27,622 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:51:27,626 - INFO -  * Restarting with stat
+2024-12-10 19:51:29,603 - INFO - Starting Flask server...
+2024-12-10 19:51:29,671 - WARNING -  * Debugger is active!
+2024-12-10 19:51:29,699 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:51:29,838 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:29] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:51:29,859 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:29] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:51:35,778 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:35] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-10 19:51:36,071 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:36] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-10 19:51:36,112 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:36] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-10 19:51:36,204 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:36] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=llGC0j6BAhOKGN9yMdaW HTTP/1.1" 200 -
+2024-12-10 19:51:36,230 - INFO - 127.0.0.1 - - [10/Dec/2024 19:51:36] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-10 19:53:15,427 - INFO - Starting Flask server...
+2024-12-10 19:53:16,499 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:53:16,500 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:53:16,505 - INFO -  * Restarting with stat
+2024-12-10 19:53:18,431 - INFO - Starting Flask server...
+2024-12-10 19:53:18,507 - WARNING -  * Debugger is active!
+2024-12-10 19:53:18,522 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:53:18,989 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:18] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:53:19,020 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:19] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:53:29,049 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:53:29,068 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:29] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:53:33,931 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:33] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:53:52,614 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:52] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:53:52,641 - INFO - 127.0.0.1 - - [10/Dec/2024 19:53:52] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:54:01,791 - INFO - 127.0.0.1 - - [10/Dec/2024 19:54:01] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:54:03,412 - INFO - 127.0.0.1 - - [10/Dec/2024 19:54:03] "GET /edit_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:54:09,602 - INFO - 127.0.0.1 - - [10/Dec/2024 19:54:09] "GET /create_contract/2 HTTP/1.1" 200 -
+2024-12-10 19:54:18,560 - INFO - 127.0.0.1 - - [10/Dec/2024 19:54:18] "[32mPOST /create_contract/2 HTTP/1.1[0m" 302 -
+2024-12-10 19:54:18,571 - INFO - 127.0.0.1 - - [10/Dec/2024 19:54:18] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:56:33,952 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-10 19:56:34,138 - INFO -  * Restarting with stat
+2024-12-10 19:56:36,049 - INFO - Starting Flask server...
+2024-12-10 19:56:36,098 - WARNING -  * Debugger is active!
+2024-12-10 19:56:36,105 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:58:04,972 - INFO - Starting Flask server...
+2024-12-10 19:58:06,064 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:58:06,064 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:58:06,066 - INFO -  * Restarting with stat
+2024-12-10 19:58:08,317 - INFO - Starting Flask server...
+2024-12-10 19:58:08,366 - WARNING -  * Debugger is active!
+2024-12-10 19:58:08,375 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:58:08,448 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:08] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:58:08,460 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:08] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:58:16,712 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:58:16,736 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:16] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:58:18,907 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:18] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:58:27,961 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:27] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:58:27,979 - INFO - 127.0.0.1 - - [10/Dec/2024 19:58:27] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 19:59:15,449 - INFO - Starting Flask server...
+2024-12-10 19:59:16,524 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 19:59:16,525 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 19:59:16,529 - INFO -  * Restarting with stat
+2024-12-10 19:59:18,873 - INFO - Starting Flask server...
+2024-12-10 19:59:18,921 - WARNING -  * Debugger is active!
+2024-12-10 19:59:18,939 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 19:59:19,046 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:19] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 19:59:19,064 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:19] "GET /login HTTP/1.1" 200 -
+2024-12-10 19:59:29,486 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 19:59:29,520 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:29] "GET /items HTTP/1.1" 200 -
+2024-12-10 19:59:32,769 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:32] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 19:59:44,609 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:44] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 19:59:44,633 - INFO - 127.0.0.1 - - [10/Dec/2024 19:59:44] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 20:03:16,509 - INFO - Starting Flask server...
+2024-12-10 20:03:17,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 20:03:17,620 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 20:03:17,624 - INFO -  * Restarting with stat
+2024-12-10 20:03:19,701 - INFO - Starting Flask server...
+2024-12-10 20:03:19,777 - WARNING -  * Debugger is active!
+2024-12-10 20:03:19,784 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 20:03:22,310 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:22] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 20:03:22,339 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:22] "GET /login HTTP/1.1" 200 -
+2024-12-10 20:03:39,061 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 20:03:39,077 - ERROR - Error displaying items: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2024-12-10 20:03:39,078 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:39] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-10 20:03:39,087 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:39] "GET /login HTTP/1.1" 200 -
+2024-12-10 20:03:51,580 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 20:03:51,589 - ERROR - Error displaying items: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2024-12-10 20:03:51,590 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:51] "[32mGET /items HTTP/1.1[0m" 302 -
+2024-12-10 20:03:51,597 - INFO - 127.0.0.1 - - [10/Dec/2024 20:03:51] "GET /login HTTP/1.1" 200 -
+2024-12-10 20:05:19,189 - INFO - Starting Flask server...
+2024-12-10 20:05:20,461 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-10 20:05:20,461 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-10 20:05:20,464 - INFO -  * Restarting with stat
+2024-12-10 20:05:22,000 - INFO - Starting Flask server...
+2024-12-10 20:05:22,060 - WARNING -  * Debugger is active!
+2024-12-10 20:05:22,069 - INFO -  * Debugger PIN: 139-560-578
+2024-12-10 20:05:22,433 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:22] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-10 20:05:22,460 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:22] "GET /login HTTP/1.1" 200 -
+2024-12-10 20:05:30,814 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-10 20:05:30,841 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:30] "GET /items HTTP/1.1" 200 -
+2024-12-10 20:05:35,001 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:35] "GET /create_contract/1 HTTP/1.1" 200 -
+2024-12-10 20:05:43,494 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:43] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
+2024-12-10 20:05:43,521 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:43] "GET /contracts HTTP/1.1" 200 -
+2024-12-10 20:05:45,615 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:45] "GET /items HTTP/1.1" 200 -

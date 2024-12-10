@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h1>Додати новий товар</h1>
+
+    <form method="POST" action="{{ url_for('add_item') }}">
+        <div class="form-group">
+            <label for="name">Назва товару*:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="price_hour">Ціна за годину (грн):</label>
+            <input type="number" id="price_hour" name="price_hour" min="0" step="0.01">
+        </div>
+
+        <div class="form-group">
+            <label for="price_day">Ціна за день (грн):</label>
+            <input type="number" id="price_day" name="price_day" min="0" step="0.01">
+        </div>
+
+        <div class="form-group">
+            <label for="price_week">Ціна за тиждень (грн):</label>
+            <input type="number" id="price_week" name="price_week" min="0" step="0.01">
+        </div>
+
+        <div class="form-group">
+            <label for="price_month">Ціна за місяць (грн):</label>
+            <input type="number" id="price_month" name="price_month" min="0" step="0.01">
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Додати товар</button>
+            <a href="{{ url_for('items_list') }}">
+                <button type="button" class="cancel-btn">Скасувати</button>
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}

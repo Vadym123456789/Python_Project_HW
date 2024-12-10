@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Профіль</title>
 </head>
 <body>
-$END$
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('items_list') }}">Товари</a></li>
+            <li><a href="{{ url_for('contracts') }}">Контракти</a></li>
+            <li><a href="{{ url_for('profile') }}">Профіль</a></li>
+            <li><a href="{{ url_for('logout') }}">Вийти</a></li>
+        </ul>
+    </nav>
+
+    <h1>Профіль користувача</h1>
+
+    <p>Логін: {{ user.login }}</p>
+    <p>Повне ім'я: {{ user.full_name }}</p>
+    <p>Контакти: {{ user.contacts }}</p>
+    <p>ІПН: {{ user.ipn }}</p>
+
 </body>
 </html>

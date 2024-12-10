@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h1>{% if item %}Редагувати{% else %}Додати{% endif %} товар</h1>
+
+    <form method="POST">
+        <div class="form-group">
+            <label for="name">Назва товару*:</label>
+            <input type="text" id="name" name="name" value="{{ item.name if item else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description">{{ item.description if item else '' }}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="price_hour">Ціна за годину (грн):</label>
+            <input type="number" id="price_hour" name="price_hour" value="{{ item.price_hour if item else '' }}" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="price_day">Ціна за день (грн):</label>
+            <input type="number" id="price_day" name="price_day" value="{{ item.price_day if item else '' }}" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="price_week">Ціна за тиждень (грн):</label>
+            <input type="number" id="price_week" name="price_week" value="{{ item.price_week if item else '' }}" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="price_month">Ціна за місяць (грн):</label>
+            <input type="number" id="price_month" name="price_month" value="{{ item.price_month if item else '' }}" min="0">
+        </div>
+
+        <div class="button-group">
+            <button type="submit">{% if item %}Зберегти зміни{% else %}Додати товар{% endif %}</button>
+            <a href="{{ url_for('items') }}">
+                <button type="button" class="cancel-btn">Скасувати</button>
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}

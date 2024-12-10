@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мої контракти</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('items_list') }}">Товари</a></li>
+            <li><a href="{{ url_for('contracts') }}">Контракти</a></li>
+            <li><a href="{{ url_for('profile') }}">Профіль</a></li>
+            <li><a href="{{ url_for('logout') }}">Вийти</a></li>
+        </ul>
+    </nav>
+
+    <h1>Мої контракти</h1>
+
+    {% for contract in contracts %}
+        <p>Контракт #{{ contract.id }}:</p>
+        <p>Товар: {{ contract.item.name }}</p> 
+        <p>Дата початку: {{ contract.start_date.strftime('%Y-%m-%d') }}</p>
+        <p>Дата кінця: {{ contract.end_date.strftime('%Y-%m-%d') }}</p>
+        <p>Ціна: {{ contract.price }}</p>
+        <a href="{{ url_for('get_item', item_id=contract.item_id) }}">Детальніше про товар</a>
+        <a href="{{ url_for('edit_contract', contract_id=contract.id) }}">Редагувати</a>
+        <a href="{{ url_for('delete_contract', contract_id=contract.id) }}" 
+           onclick="return confirm('Ви впевнені, що хочете видалити цей контракт?')">Видалити</a>
+    {% endfor %}
+
+    <a href="{{ url_for('items_list') }}">Назад до списку товарів</a>
+</body>
+</html>

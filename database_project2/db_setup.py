@@ -5,6 +5,11 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+engine = create_engine('sqlite:///database_project2/database_Project2.db')
+Session = sessionmaker(bind=engine)
 
 class DatabaseManager:
     def __init__(self,

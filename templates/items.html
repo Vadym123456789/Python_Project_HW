@@ -1,37 +1,130 @@
-<h1>Список товарів</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список товарів</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .user-info {
+            text-align: right;
+        }
+        .add-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .add-button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        .empty-message {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        .action-buttons a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2196F3;
+        }
+        .delete-button {
+            color: #f44336 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
 
-<p>Користувач: {{ session['user_login'] }} <a href="{{ url_for('logout') }}">Вийти</a></p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('items_list') }}">Товари</a></li>
+                <li><a href="{{ url_for('contracts') }}">Контракти</a></li>
+                <li><a href="{{ url_for('profile') }}">Профіль</a></li>
+                <li><a href="{{ url_for('logout') }}">Вийти</a></li>
+            </ul>
+        </nav>
 
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-{% endwith  %}
+        <div class="header">
+            <h1>Список товарів для оренди</h1>
+            <div class="user-info">
+                <span>Користувач: {{ current_user.login }}</span>
+            </div>
+        </div>
 
-{% if items %}
-    <ul class="item-list">
-        {% for item in items %}
-            <li class="item">
-                <h2><a href="{{ url_for('get_item', item_id=item.id) }}">{{ item.name }}</a></h2>
-                <p>{{ item.description }}</p>
-                <p>Ціна за годину: {{ item.price_hour }}</p>
-                <p>Ціна за день: {{ item.price_day }}</p>
+        <a href="{{ url_for('add_item') }}" class="add-button">Додати новий товар</a>
 
-                {% if item.price_week %}
-                    <p>Ціна за тиждень: {{ item.price_week }}</p>
-                {% endif %}
+        {% if items %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Опис</th>
+                        <th>Година</th>
+                        <th>День</th>
+                        <th>Тиждень</th>
+                        <th>Місяць</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                        <tr>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.description }}</td>
+                            <td>{{ item.price_hour }} грн</td>
+                            <td>{{ item.price_day }} грн</td>
+                            <td>{{ item.price_week }} грн</td>
+                            <td>{{ item.price_month }} грн</td>
+                            <td class="action-buttons">
+                                <a href="{{ url_for('edit_item', item_id=item.id) }}">
+                                    <button type="button">Редагувати</button>
+                                </a>
+                                <a href="{{ url_for('delete_item', item_id=item.id) }}"
+                                   class="delete-button"
+                                   onclick="return confirm('Ви впевнені, що хочете видалити цей товар?')">
+                                    Видалити
+                                </a>
+                                <a href="{{ url_for('create_contract', item_id=item.id) }}">
+                                    <button type="button">Створити контракт</button>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="empty-message">
+                <p>Поки що немає доданих товарів.</p>
+                <p>Натисніть "Додати новий товар" щоб створити перший запис.</p>
+            </div>
+        {% endif %}
 
-                {% if item.price_month %}
-                    <p>Ціна за місяць: {{ item.price_month }}</p>
-                {% endif %}
-
-            </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>Список товарів порожній.</p>
-{% endif %}
+    </div>
+</body>
+</html>
