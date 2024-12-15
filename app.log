@@ -1658,3 +1658,232 @@
 2024-12-10 20:05:43,494 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:43] "[32mPOST /create_contract/1 HTTP/1.1[0m" 302 -
 2024-12-10 20:05:43,521 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:43] "GET /contracts HTTP/1.1" 200 -
 2024-12-10 20:05:45,615 - INFO - 127.0.0.1 - - [10/Dec/2024 20:05:45] "GET /items HTTP/1.1" 200 -
+2024-12-11 19:01:15,865 - INFO - Starting Flask server...
+2024-12-11 19:01:17,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.186:5000
+2024-12-11 19:01:17,117 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-11 19:01:17,123 - INFO -  * Restarting with stat
+2024-12-11 19:01:19,422 - INFO - Starting Flask server...
+2024-12-11 19:01:19,452 - WARNING -  * Debugger is active!
+2024-12-11 19:01:19,462 - INFO -  * Debugger PIN: 139-560-578
+2024-12-11 19:01:19,644 - INFO - 127.0.0.1 - - [11/Dec/2024 19:01:19] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-11 19:01:19,693 - INFO - 127.0.0.1 - - [11/Dec/2024 19:01:19] "GET /login HTTP/1.1" 200 -
+2024-12-11 19:01:19,783 - INFO - 127.0.0.1 - - [11/Dec/2024 19:01:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-11 19:01:23,957 - DEBUG - === Registration page opened ===
+2024-12-11 19:01:23,957 - DEBUG - GET request - showing registration form
+2024-12-11 19:01:23,969 - INFO - 127.0.0.1 - - [11/Dec/2024 19:01:23] "GET /register HTTP/1.1" 200 -
+2024-12-11 19:01:54,734 - DEBUG - === Registration page opened ===
+2024-12-11 19:01:54,735 - DEBUG - === Received POST request ===
+2024-12-11 19:01:54,740 - DEBUG - Form data: {'login': 'Test4', 'password': 'Test4', 'full_name': 'Test4', 'contacts': 'vgumenuk@gmail.com'}
+2024-12-11 19:01:54,740 - DEBUG - Checking user: Test4
+2024-12-11 19:01:54,741 - DEBUG - Searching for user: Test4
+2024-12-11 19:01:54,765 - DEBUG - Hashing password...
+2024-12-11 19:01:55,049 - DEBUG - Attempting to create user...
+2024-12-11 19:01:55,050 - DEBUG - Attempting to create user: Test4
+2024-12-11 19:01:55,064 - INFO - User Test4 created successfully
+2024-12-11 19:01:55,064 - INFO - Registration successful!
+2024-12-11 19:01:55,066 - INFO - 127.0.0.1 - - [11/Dec/2024 19:01:55] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-11 19:01:55,075 - INFO - 127.0.0.1 - - [11/Dec/2024 19:01:55] "GET /login HTTP/1.1" 200 -
+2024-12-11 19:02:06,212 - INFO - 127.0.0.1 - - [11/Dec/2024 19:02:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-11 19:02:06,235 - INFO - 127.0.0.1 - - [11/Dec/2024 19:02:06] "GET /items HTTP/1.1" 200 -
+2024-12-11 19:02:13,848 - INFO - 127.0.0.1 - - [11/Dec/2024 19:02:13] "GET /add_item HTTP/1.1" 200 -
+2024-12-11 19:02:40,959 - INFO - 127.0.0.1 - - [11/Dec/2024 19:02:40] "[32mPOST /add_item HTTP/1.1[0m" 302 -
+2024-12-11 19:02:40,969 - INFO - 127.0.0.1 - - [11/Dec/2024 19:02:40] "GET /items HTTP/1.1" 200 -
+2024-12-11 19:02:43,982 - INFO - 127.0.0.1 - - [11/Dec/2024 19:02:43] "GET /create_contract/3 HTTP/1.1" 200 -
+2024-12-11 19:02:58,622 - DEBUG - 
+def send_contract_email(contract_info):
+    return 1
+
+2024-12-11 19:03:02,950 - ERROR - Error creating contract: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2024-12-11 19:03:02,951 - INFO - 127.0.0.1 - - [11/Dec/2024 19:03:02] "[32mPOST /create_contract/3 HTTP/1.1[0m" 302 -
+2024-12-11 19:03:06,605 - ERROR - Error creating contract: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2024-12-11 19:03:06,607 - INFO - 127.0.0.1 - - [11/Dec/2024 19:03:06] "[32mPOST /create_contract/3 HTTP/1.1[0m" 302 -
+2024-12-11 19:03:06,623 - INFO - 127.0.0.1 - - [11/Dec/2024 19:03:06] "GET /items HTTP/1.1" 200 -
+2024-12-11 19:03:11,461 - INFO - 127.0.0.1 - - [11/Dec/2024 19:03:11] "GET /contracts HTTP/1.1" 200 -
+2024-12-11 19:11:41,490 - INFO - 127.0.0.1 - - [11/Dec/2024 19:11:41] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-11 19:11:41,495 - INFO - 127.0.0.1 - - [11/Dec/2024 19:11:41] "GET /login HTTP/1.1" 200 -
+2024-12-11 19:11:41,755 - INFO - 127.0.0.1 - - [11/Dec/2024 19:11:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-11 19:22:23,282 - INFO - Starting Flask server...
+2024-12-11 19:22:24,576 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.186:5000
+2024-12-11 19:22:24,577 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-11 19:22:24,582 - INFO -  * Restarting with stat
+2024-12-11 19:22:26,964 - INFO - Starting Flask server...
+2024-12-11 19:22:26,991 - WARNING -  * Debugger is active!
+2024-12-11 19:22:26,998 - INFO -  * Debugger PIN: 139-560-578
+2024-12-11 18:25:07,808 - INFO - Starting Flask server...
+2024-12-11 18:25:07,843 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.3:5000
+2024-12-11 18:25:07,844 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-11 18:25:07,847 - INFO -  * Restarting with stat
+2024-12-11 18:25:08,703 - INFO - Starting Flask server...
+2024-12-11 18:25:08,720 - WARNING -  * Debugger is active!
+2024-12-11 18:25:08,721 - INFO -  * Debugger PIN: 122-656-928
+2024-12-11 19:27:52,335 - INFO - Starting Flask server...
+2024-12-11 19:27:53,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.186:5000
+2024-12-11 19:27:53,374 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-11 19:27:53,377 - INFO -  * Restarting with stat
+2024-12-11 19:27:55,344 - INFO - Starting Flask server...
+2024-12-11 19:27:55,381 - WARNING -  * Debugger is active!
+2024-12-11 19:27:55,389 - INFO -  * Debugger PIN: 139-560-578
+2024-12-11 19:27:55,599 - INFO - 127.0.0.1 - - [11/Dec/2024 19:27:55] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-11 19:27:55,638 - INFO - 127.0.0.1 - - [11/Dec/2024 19:27:55] "GET /login HTTP/1.1" 200 -
+2024-12-11 19:28:06,099 - INFO - 127.0.0.1 - - [11/Dec/2024 19:28:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-11 19:28:06,130 - INFO - 127.0.0.1 - - [11/Dec/2024 19:28:06] "GET /items HTTP/1.1" 200 -
+2024-12-11 19:28:12,606 - INFO - 127.0.0.1 - - [11/Dec/2024 19:28:12] "GET /create_contract/3 HTTP/1.1" 200 -
+2024-12-11 19:28:26,752 - DEBUG - 
+def send_contract_email(contract_info):
+    return 1
+
+2024-12-11 19:28:34,871 - ERROR - Error creating contract: Error 11001 connecting to redis:6379. getaddrinfo failed.
+2024-12-11 19:28:34,872 - INFO - 127.0.0.1 - - [11/Dec/2024 19:28:34] "[32mPOST /create_contract/3 HTTP/1.1[0m" 302 -
+2024-12-11 19:28:34,883 - INFO - 127.0.0.1 - - [11/Dec/2024 19:28:34] "GET /items HTTP/1.1" 200 -
+2024-12-11 19:37:08,084 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\config.py', reloading
+2024-12-11 18:37:08,173 - INFO -  * Detected change in '/app/config.py', reloading
+2024-12-11 19:37:08,352 - INFO -  * Restarting with stat
+2024-12-11 18:37:08,373 - INFO -  * Restarting with stat
+2024-12-11 18:37:09,608 - INFO - Starting Flask server...
+2024-12-11 18:37:09,640 - WARNING -  * Debugger is active!
+2024-12-11 18:37:09,643 - INFO -  * Debugger PIN: 122-656-928
+2024-12-11 19:37:10,852 - INFO - Starting Flask server...
+2024-12-11 19:37:10,904 - WARNING -  * Debugger is active!
+2024-12-11 19:37:10,923 - INFO -  * Debugger PIN: 139-560-578
+2024-12-11 19:40:08,379 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\main.py', reloading
+2024-12-11 19:40:08,569 - INFO -  * Restarting with stat
+2024-12-11 18:40:08,799 - INFO -  * Detected change in '/app/main.py', reloading
+2024-12-11 18:40:09,004 - INFO -  * Restarting with stat
+2024-12-11 20:12:12,505 - INFO - Starting Flask server...
+2024-12-11 20:12:13,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.186:5000
+2024-12-11 20:12:13,565 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-11 20:12:13,568 - INFO -  * Restarting with stat
+2024-12-11 20:12:15,895 - INFO - Starting Flask server...
+2024-12-11 20:12:15,926 - WARNING -  * Debugger is active!
+2024-12-11 20:12:15,939 - INFO -  * Debugger PIN: 139-560-578
+2024-12-11 20:12:18,545 - INFO - 127.0.0.1 - - [11/Dec/2024 20:12:18] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-11 20:12:18,574 - INFO - 127.0.0.1 - - [11/Dec/2024 20:12:18] "GET /login HTTP/1.1" 200 -
+2024-12-11 20:12:29,429 - INFO - 127.0.0.1 - - [11/Dec/2024 20:12:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-11 20:12:29,452 - INFO - 127.0.0.1 - - [11/Dec/2024 20:12:29] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:12:40,802 - INFO - 127.0.0.1 - - [11/Dec/2024 20:12:40] "GET /add_item HTTP/1.1" 200 -
+2024-12-11 20:13:00,794 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:00] "[32mPOST /add_item HTTP/1.1[0m" 302 -
+2024-12-11 20:13:00,812 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:00] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:13:06,291 - ERROR - Error updating item: Could not build url for endpoint 'items'. Did you mean 'items_list' instead?
+2024-12-11 20:13:06,292 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:06] "[32mGET /edit_item/4 HTTP/1.1[0m" 302 -
+2024-12-11 20:13:06,302 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:06] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:13:10,462 - ERROR - Error updating item: Could not build url for endpoint 'items'. Did you mean 'items_list' instead?
+2024-12-11 20:13:10,463 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:10] "[32mGET /edit_item/4 HTTP/1.1[0m" 302 -
+2024-12-11 20:13:10,471 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:10] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:13:12,104 - ERROR - Error updating item: Could not build url for endpoint 'items'. Did you mean 'items_list' instead?
+2024-12-11 20:13:12,104 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:12] "[32mGET /edit_item/4 HTTP/1.1[0m" 302 -
+2024-12-11 20:13:12,112 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:12] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:13:21,155 - INFO - 127.0.0.1 - - [11/Dec/2024 20:13:21] "GET /create_contract/4 HTTP/1.1" 200 -
+2024-12-11 20:13:43,902 - DEBUG - 
+def send_contract_email(contract_info):
+    return 1
+
+2024-12-11 20:13:50,039 - ERROR - Connection to Redis lost: Retry (0/20) now.
+2024-12-11 20:13:52,744 - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2024-12-11 20:13:56,878 - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2024-12-11 20:14:00,587 - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2024-12-11 20:14:04,285 - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2024-12-11 20:14:08,465 - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2024-12-11 20:14:12,174 - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2024-12-11 20:14:16,184 - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2024-12-11 20:14:19,898 - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2024-12-11 20:14:24,031 - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2024-12-11 20:14:27,745 - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2024-12-11 20:14:31,452 - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2024-12-11 20:14:35,657 - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2024-12-11 20:14:39,350 - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2024-12-11 20:14:43,515 - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2024-12-11 20:14:47,218 - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2024-12-11 20:14:51,328 - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2024-12-11 20:14:55,024 - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2024-12-11 20:14:59,028 - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2024-12-11 20:15:02,727 - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2024-12-11 20:15:06,432 - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2024-12-11 20:15:06,434 - ERROR - Error creating contract: Error 11001 connecting to redis:6379. getaddrinfo failed.
+2024-12-11 20:15:06,547 - INFO - 127.0.0.1 - - [11/Dec/2024 20:15:06] "[35m[1mPOST /create_contract/4 HTTP/1.1[0m" 500 -
+2024-12-11 20:15:06,975 - INFO - 127.0.0.1 - - [11/Dec/2024 20:15:06] "GET /create_contract/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-11 20:15:07,004 - INFO - 127.0.0.1 - - [11/Dec/2024 20:15:07] "GET /create_contract/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-11 20:15:07,035 - INFO - 127.0.0.1 - - [11/Dec/2024 20:15:07] "GET /create_contract/4?__debugger__=yes&cmd=resource&f=console.png&s=IyqyHjNlLJjZK7JIw9mu HTTP/1.1" 200 -
+2024-12-11 20:15:07,147 - INFO - 127.0.0.1 - - [11/Dec/2024 20:15:07] "GET /create_contract/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-11 20:17:38,992 - INFO - Starting Flask server...
+2024-12-11 20:17:40,084 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.186:5000
+2024-12-11 20:17:40,085 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-11 20:17:40,089 - INFO -  * Restarting with stat
+2024-12-11 20:17:42,556 - INFO - Starting Flask server...
+2024-12-11 20:17:42,605 - WARNING -  * Debugger is active!
+2024-12-11 20:17:42,619 - INFO -  * Debugger PIN: 139-560-578
+2024-12-11 20:17:45,269 - INFO - 127.0.0.1 - - [11/Dec/2024 20:17:45] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-11 20:17:45,312 - INFO - 127.0.0.1 - - [11/Dec/2024 20:17:45] "GET /login HTTP/1.1" 200 -
+2024-12-11 20:17:55,934 - INFO - 127.0.0.1 - - [11/Dec/2024 20:17:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-11 20:17:55,960 - INFO - 127.0.0.1 - - [11/Dec/2024 20:17:55] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:18:00,945 - ERROR - Error updating item: Could not build url for endpoint 'items'. Did you mean 'items_list' instead?
+2024-12-11 20:18:00,945 - INFO - 127.0.0.1 - - [11/Dec/2024 20:18:00] "[32mGET /edit_item/4 HTTP/1.1[0m" 302 -
+2024-12-11 20:18:00,953 - INFO - 127.0.0.1 - - [11/Dec/2024 20:18:00] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:18:02,445 - INFO - 127.0.0.1 - - [11/Dec/2024 20:18:02] "GET /create_contract/4 HTTP/1.1" 200 -
+2024-12-11 20:18:10,356 - DEBUG - 
+def send_contract_email(contract_info):
+    return 1
+
+2024-12-11 20:18:16,216 - ERROR - Connection to Redis lost: Retry (0/20) now.
+2024-12-11 20:18:18,925 - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2024-12-11 20:18:23,261 - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2024-12-11 20:18:26,966 - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2024-12-11 20:18:31,107 - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2024-12-11 20:18:34,812 - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2024-12-11 20:18:39,087 - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2024-12-11 20:18:42,791 - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2024-12-11 20:18:46,867 - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2024-12-11 20:18:50,581 - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2024-12-11 20:18:54,290 - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2024-12-11 20:18:58,217 - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2024-12-11 20:19:01,927 - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2024-12-11 20:19:06,387 - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2024-12-11 20:19:10,094 - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2024-12-11 20:19:14,108 - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2024-12-11 20:19:17,815 - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2024-12-11 20:19:21,818 - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2024-12-11 20:19:25,512 - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2024-12-11 20:19:29,206 - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2024-12-11 20:19:33,315 - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2024-12-11 20:19:33,315 - ERROR - Error creating contract: Error 11001 connecting to redis:6379. getaddrinfo failed.
+2024-12-11 20:19:33,316 - INFO - 127.0.0.1 - - [11/Dec/2024 20:19:33] "[32mPOST /create_contract/4 HTTP/1.1[0m" 302 -
+2024-12-11 20:19:33,331 - INFO - 127.0.0.1 - - [11/Dec/2024 20:19:33] "GET /items HTTP/1.1" 200 -
+2024-12-11 20:20:31,027 - INFO -  * Detected change in 'C:\\Users\\vgumenyuk1\\Documents\\Python projects\\pythonProject 2\\config.py', reloading
+2024-12-11 20:20:31,224 - INFO -  * Restarting with stat
+2024-12-11 20:20:33,769 - INFO - Starting Flask server...
+2024-12-11 20:20:33,822 - WARNING -  * Debugger is active!
+2024-12-11 20:20:33,838 - INFO -  * Debugger PIN: 139-560-578
+2024-12-15 15:18:37,559 - INFO - Starting Flask server...
+2024-12-15 15:18:38,648 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.223.80.21:5000
+2024-12-15 15:18:38,648 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-15 15:18:38,658 - INFO -  * Restarting with stat
+2024-12-15 15:18:41,533 - INFO - Starting Flask server...
+2024-12-15 15:18:41,570 - WARNING -  * Debugger is active!
+2024-12-15 15:18:41,624 - INFO -  * Debugger PIN: 139-560-578
+2024-12-15 15:18:42,289 - INFO - 127.0.0.1 - - [15/Dec/2024 15:18:42] "[32mGET / HTTP/1.1[0m" 302 -
+2024-12-15 15:18:42,346 - INFO - 127.0.0.1 - - [15/Dec/2024 15:18:42] "GET /login HTTP/1.1" 200 -
+2024-12-15 15:18:42,434 - INFO - 127.0.0.1 - - [15/Dec/2024 15:18:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

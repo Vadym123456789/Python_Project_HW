@@ -10,7 +10,6 @@ from flask import (
     render_template,
     request,
     flash,
-    session,
 )
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import (
@@ -22,7 +21,10 @@ from flask_login import (
     current_user,
 )
 
-from models import Item, User, Contract, Session  # Імпортуємо Session з models.py
+from models import Item, User, Contract, Session
+from celery_app import send_contract_email
+from config import Config
+from celery import Celery
 
 # Налаштування логування
 logging.basicConfig(
@@ -39,8 +41,31 @@ logger = logging.getLogger(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATABASE = r"C:\Users\vgumenyuk1\Documents\Python projects\pythonProject 2\database_project2\database_Project2.db"
 
-app = Flask(__name__)  # Перенесено на початок файлу
-app.secret_key = os.urandom(24)
+# Створення застосунку Flask та Celery
+def create_app():
+    app = Flask(__name__)
+    app.config.from_object(Config)
+    return app
+
+
+def create_celery(app):
+    celery = Celery(
+        app.import_name,
+        broker=app.config["CELERY"]["broker_url"],
+        backend=app.config["CELERY"]["result_backend"],
+    )
+
+    class ContextTask(celery.Task):
+        def __call__(self, *args, **kwargs):
+            with app.app_context():
+                return self.run(*args, **kwargs)
+
+    celery.Task = ContextTask
+    return celery
+
+
+app = create_app()
+celery = create_celery(app)
 
 # Ініціалізація Flask-Login
 login_manager = LoginManager()
@@ -68,7 +93,7 @@ def login():
             user = session.query(User).filter(User.login == login).first()
             if user and check_password_hash(user.password, password):
                 login_user(user)
-                return redirect(url_for("items_list"))  # Redirects to items list
+                return redirect(url_for("items_list"))
             else:
                 flash("Невірний логін або пароль")
                 return render_template("login.html")
@@ -82,15 +107,7 @@ def get_user(login):
         with Session() as session:
             user = session.query(User).filter(User.login == login).first()
             if user:
-                user_dict = {
-                    "id": user.id,
-                    "login": user.login,
-                    "password": user.password,
-                    "full_name": user.full_name,
-                    "contacts": user.contacts,
-                    "ipn": user.ipn,
-                }
-                return user_dict
+                return user
         return None
     except Exception as e:
         logger.error(f"Error searching for user: {str(e)}")
@@ -126,7 +143,7 @@ def get_all_items():
     try:
         with Session() as session:
             items = session.query(Item).all()
-            return items  # Повертаємо список об'єктів Item
+            return items
     except Exception as e:
         logger.error(f"Error getting items: {str(e)}")
         return []
@@ -145,8 +162,6 @@ def register():
                 logger.warning("Missing required fields")
                 flash("Відсутні обов'язкові поля")
                 return render_template("register.html")
-
-            # TODO: Додати валідацію даних
 
             logger.debug(f"Checking user: {data['login']}")
             existing_user = get_user(data["login"])
@@ -183,12 +198,10 @@ def register():
 
 @app.route("/items", endpoint="items_list")
 @login_required
-def items():
+def items_list():
     try:
         items_list = get_all_items()
-        return render_template(
-            "items.html", items=items_list, user_login=session.get("user_login")
-        )
+        return render_template("items.html", items=items_list)
     except Exception as e:
         logger.error(f"Error displaying items: {str(e)}")
         flash("Помилка при відображенні списку товарів")
@@ -200,14 +213,10 @@ def items():
 def get_item(item_id):
     try:
         with Session() as session:
-            item = session.get(Item, item_id)  # Використовуємо session.get()
+            item = session.get(Item, item_id)
             if not item:
                 return "Item not found", 404
 
-            # Конвертуємо об'єкт Item в словник
-            item_dict = {
-                c.name: getattr(item, c.name) for c in item.__table__.columns
-            }
             return render_template("item.html", item=item)
 
     except Exception as e:
@@ -225,9 +234,7 @@ def logout():
 @app.route("/profile")
 @login_required
 def profile():
-    user_login = session["user_login"]
-    user_data = get_user(user_login)
-    return render_template("profile.html", user=user_data)
+    return render_template("profile.html", user=current_user)
 
 
 @app.route("/edit_item/<int:item_id>", methods=["GET", "POST"])
@@ -235,7 +242,7 @@ def profile():
 def edit_item(item_id):
     try:
         with Session() as session:
-            item = session.query(Item).get(item_id)
+            item = session.get(Item, item_id)  # Використовуємо session.get()
             if not item:
                 flash("Товар не знайдено")
                 return redirect(url_for("items_list"))
@@ -269,8 +276,8 @@ def edit_item(item_id):
 
             return render_template("edit_item.html", item=item)
     except Exception as e:
-        logger.error(f"Error updating item: {e}")
-        flash("Помилка при оновленні товару")
+        app.logger.error(f"Error updating item: {str(e)}")
+        flash("Error updating item", "error")
         return redirect(url_for("items_list"))
 
 
@@ -330,7 +337,7 @@ def delete_item(item_id):
 def create_contract(item_id):
     try:
         with Session() as session:
-            item = session.get(Item, item_id)  # Використовуємо session.get()
+            item = session.get(Item, item_id)
             if not item:
                 flash("Товар не знайдено")
                 return redirect(url_for("items_list"))
@@ -339,7 +346,6 @@ def create_contract(item_id):
                 start_date_str = request.form["start_date"]
                 end_date_str = request.form["end_date"]
 
-                # Перевірка формату дати
                 try:
                     start_date = datetime.strptime(start_date_str, "%Y-%m-%d")
                     end_date = datetime.strptime(end_date_str, "%Y-%m-%d")
@@ -351,20 +357,30 @@ def create_contract(item_id):
 
                 new_contract = Contract(
                     item_id=item_id,
-                    user_id=current_user.id,  # Використовуємо current_user.id
+                    user_id=current_user.id,
                     start_date=start_date,
                     end_date=end_date,
                     price=price,
                 )
                 session.add(new_contract)
                 session.commit()
+
+                # Надсилання email через Celery
+                contract_info = {
+                    "contract_id": new_contract.id,
+                    "item_name": new_contract.item.name,
+                    # ... інша інформація про контракт
+                }
+                send_contract_email.delay(contract_info)
+
                 flash("Контракт успішно створено")
-                return redirect(url_for("contracts"))  # Перенаправляємо на /contracts
+                return redirect(url_for("contracts"))
 
             return render_template("create_contract.html", item=item)
     except Exception as e:
+        session.rollback()
         logger.error(f"Error creating contract: {str(e)}")
-        flash(f"Помилка при створенні контракту: {str(e)}")
+        flash("Помилка при створенні контракту", "error")
         return redirect(url_for("items_list"))
 
 
@@ -373,9 +389,11 @@ def create_contract(item_id):
 def contracts():
     try:
         with Session() as session:
-            print(f"Current user ID: {current_user.id}")  # Виведення user_id
-            contracts = session.query(Contract).filter(Contract.user_id == current_user.id).all()
-            print(f"Contracts: {contracts}")  # Виведення списку контрактів
+            contracts = (
+                session.query(Contract)
+                .filter(Contract.user_id == current_user.id)
+                .all()
+            )
             return render_template("contracts.html", contracts=contracts)
     except Exception as e:
         logger.error(f"Error fetching contracts: {str(e)}")
@@ -398,7 +416,6 @@ def edit_contract(contract_id):
                 end_date_str = request.form["end_date"]
                 price = int(request.form["price"])
 
-                # Перевірка формату дати (додатково)
                 try:
                     start_date = datetime.strptime(start_date_str, "%Y-%m-%d")
                     end_date = datetime.strptime(end_date_str, "%Y-%m-%d")

@@ -1,20 +1,22 @@
-# Use Python base image
+# Dockerfile
 FROM python:3.9-slim
 
-# Set working directory
 WORKDIR /app
 
-# Copy requirements file
 COPY requirements.txt .
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip install celery redis flask
 
-# Copy project files
+# Створюємо не root користувача
+RUN groupadd -r appgroup && useradd -r -g appgroup appuser
+
+# Копіюємо файли проекту
 COPY . .
 
-# Expose port if your app needs it (adjust if needed)
-EXPOSE 8000
+# Змінюємо власника файлів
+RUN chown -R appuser:appgroup /app
 
-# Command to run the application
-CMD ["python", "main.py"]
+USER appuser
+
+EXPOSE 5000
