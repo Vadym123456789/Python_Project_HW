@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trainers</title>
+</head>
+<body>
+    <h2>List of Trainers</h2>
+    <ul>
+        {% for trainer in trainers %}
+            <li><a href="{% url 'trainer_detail' trainer.id %}">{{ trainer.user.username }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

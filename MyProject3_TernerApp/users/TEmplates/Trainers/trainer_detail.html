@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trainer Details</title>
+</head>
+<body>
+    <h2>{{ trainer.user.username }}</h2>
+    <p>Categories: {{ trainer.categories.all|join:", " }}</p>
+    <h3>Services</h3>
+    <ul>
+        {% for service in trainer.service_set.all %}
+            <li><a href="{% url 'service_detail' trainer.id service.id %}">{{ service.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

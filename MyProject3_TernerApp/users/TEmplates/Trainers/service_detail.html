@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Details</title>
+</head>
+<body>
+    <h2>{{ service.name }}</h2>
+    <p>Price: {{ service.price }}</p>
+    <p>Duration: {{ service.duration }} minutes</p>
+    <p>Level: {{ service.level }}</p>
+    <form method="post" action="{% url 'book_service' service.trainer.id service.id %}">
+        {% csrf_token %}
+        <button type="submit">Book Service</button>
+    </form>
+</body>
+</html>
+
